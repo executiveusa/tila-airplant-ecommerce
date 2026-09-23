@@ -79,7 +79,7 @@ export const COPY: Record<Lang, Copy> = {
     priceSub: "El precio baja según el total de plantas del pedido, sin importar la mezcla de tallas.",
     priceHead: { size: "Talla", tier: (min, max) => (max ? `${min}-${max} plantas` : `${min}+ plantas`) },
     resale: "Precios por debajo del menudeo de Tillandsia bulbosa en MercadoLibre México (septiembre 2026).",
-    taxNote: "Precios en pesos mexicanos. [IVA, factura y costo de envío: por confirmar].",
+    taxNote: "Precios en pesos mexicanos (MXN). [IVA, factura y costo de envío: por confirmar].",
     howTitle: "Cómo funciona",
     how: [
       { t: "Arma tu pedido", d: "Elige cuántas plantas quieres de cada talla. Mínimo 50 en total." },
@@ -171,7 +171,7 @@ export const COPY: Record<Lang, Copy> = {
     priceSub: "The price drops with the total number of plants in your order, however you mix the sizes.",
     priceHead: { size: "Size", tier: (min, max) => (max ? `${min}-${max} plants` : `${min}+ plants`) },
     resale: "Priced below retail Tillandsia bulbosa listings on MercadoLibre Mexico (September 2026).",
-    taxNote: "Prices in Mexican pesos. [VAT, invoicing and shipping cost: to be confirmed].",
+    taxNote: "Prices in US dollars (USD), converted from our peso prices and rounded up. [VAT, invoicing and shipping cost: to be confirmed].",
     howTitle: "How it works",
     how: [
       { t: "Build your order", d: "Pick how many plants you want in each size. 50 minimum in total." },

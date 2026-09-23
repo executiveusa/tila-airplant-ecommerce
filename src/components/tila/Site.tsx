@@ -3,7 +3,11 @@ import Link from "next/link";
 import QuoteBuilder from "./QuoteBuilder";
 import { RevealObserver, SmartHeader, MobileOrderBar } from "./Motion";
 import { COPY, type Lang } from "@/content/copy";
-import { SIZES, TIERS, mxn, CREDITS } from "@/content/pricing";
+import { SIZES, TIERS, CREDITS } from "@/content/pricing";
+import { Money, RateNote } from "./Money";
+
+// Put a React node into a copy template that expects a string.
+const tpl = (fn: (p: string) => string, node: React.ReactNode) => { const [a, b] = fn("\u0000").split("\u0000"); return <>{a}{node}{b}</>; };
 
 // Visual world: the bulbosa itself. Night-jungle green ground (selva), bract red (bractea) for action,
 // flower violet (flor) and new-growth green (brote) as supporting color. Leaf-shaped corners, curling tendril lines.
@@ -63,7 +67,7 @@ export default function Site({ lang }: { lang: Lang }) {
               <a href="#pedido" className="flex h-14 items-center rounded-full bg-bractea px-7 font-semibold text-white transition-colors hover:bg-bractea-dark active:scale-[0.97]">{c.hero.cta}</a>
               <a href="#precios" className="flex h-14 items-center rounded-full border border-hueso/30 px-7 font-semibold text-hueso backdrop-blur-sm transition-colors hover:bg-hueso/10 active:scale-[0.97]">{c.hero.cta2}</a>
             </div>
-            <p data-reveal style={{ ["--d" as string]: "320ms" }} className="mt-6 text-sm text-hueso/70"><span className="font-semibold text-brote">{c.heroPrice(mxn(SIZES[0].prices![0]))}</span></p>
+            <p data-reveal style={{ ["--d" as string]: "320ms" }} className="mt-6 text-sm text-hueso/70"><span className="font-semibold text-brote">{tpl(c.heroPrice, <Money mxn={SIZES[0].prices![0]} lang={lang} />)}</span></p>
           </div>
         </section>
 
@@ -91,7 +95,7 @@ export default function Site({ lang }: { lang: Lang }) {
                   <p className="mt-1 text-sm text-brote">{c.sizes[z.key].examples}</p>
                   <p className="mt-2 text-sm text-hueso/65">{c.sizes[z.key].use}</p>
                   {z.prices ? (
-                    <p className="mt-3 text-sm text-hueso/60"><span className="font-display text-2xl font-semibold text-hueso">{mxn(z.prices[0])}</span> {c.perPlant} · {c.dropsTo(mxn(z.prices[2]))}</p>
+                    <p className="mt-3 text-sm text-hueso/60"><span className="font-display text-2xl font-semibold text-hueso">{<Money mxn={z.prices[0]} lang={lang} />}</span> {c.perPlant} · {tpl(c.dropsTo, <Money mxn={z.prices[2]} lang={lang} />)}</p>
                   ) : (
                     <p className="mt-3 text-sm text-hueso/60"><span className="font-display text-2xl font-semibold text-hueso">{c.quoteOnly}</span></p>
                   )}
@@ -115,7 +119,7 @@ export default function Site({ lang }: { lang: Lang }) {
                       {TIERS.map((t, i) => (
                         <div key={t.min} className={`leaf-sm px-1 py-2.5 ${i === 2 ? "bg-bractea/15" : "bg-hueso/5"}`}>
                           <dt className="text-[11px] text-hueso/55">{c.priceHead.tier(t.min, t.max)}</dt>
-                          <dd className={`mt-0.5 font-display text-xl font-semibold tabular-nums ${i === 2 ? "text-bractea-soft" : "text-hueso"}`}>{mxn(z.prices![i])}</dd>
+                          <dd className={`mt-0.5 font-display text-xl font-semibold tabular-nums ${i === 2 ? "text-bractea-soft" : "text-hueso"}`}>{<Money mxn={z.prices![i]} lang={lang} />}</dd>
                         </div>
                       ))}
                     </dl>
@@ -137,14 +141,14 @@ export default function Site({ lang }: { lang: Lang }) {
                   {SIZES.map((z) => (
                     <tr key={z.key} className="transition-colors hover:bg-hueso/[0.03]">
                       <td className="p-5"><span className="font-semibold text-hueso">{c.sizes[z.key].name}</span> <span className="text-sm text-hueso/50">{z.cm}</span></td>
-                      {z.prices ? z.prices.map((p, i) => <td key={i} className={`p-5 text-right font-display text-xl font-semibold tabular-nums ${i === 2 ? "text-bractea-soft" : "text-hueso"}`}>{mxn(p)}</td>) : <td colSpan={3} className="p-5 text-right text-sm text-hueso/65"><span className="font-display text-xl font-semibold text-hueso">{c.quoteOnly}</span> · {c.specialNote}</td>}
+                      {z.prices ? z.prices.map((p, i) => <td key={i} className={`p-5 text-right font-display text-xl font-semibold tabular-nums ${i === 2 ? "text-bractea-soft" : "text-hueso"}`}>{<Money mxn={p} lang={lang} />}</td>) : <td colSpan={3} className="p-5 text-right text-sm text-hueso/65"><span className="font-display text-xl font-semibold text-hueso">{c.quoteOnly}</span> · {c.specialNote}</td>}
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
             <p className="mt-6 text-sm text-hueso/70">{c.resale}</p>
-            <p className="mt-1 text-sm text-hueso/50">{c.taxNote}</p>
+            <p className="mt-1 text-sm text-hueso/50">{c.taxNote} <RateNote lang={lang} /></p>
           </div>
         </section>
 
@@ -257,7 +261,7 @@ export default function Site({ lang }: { lang: Lang }) {
         </div>
       </footer>
 
-      <MobileOrderBar label={c.nav.cta} sub={`${c.from} ${mxn(SIZES[0].prices![0])}`} />
+      <MobileOrderBar label={c.nav.cta} sub={<span>{c.from} <Money mxn={SIZES[0].prices![0]} lang={lang} /></span>} />
     </>
   );
 }
