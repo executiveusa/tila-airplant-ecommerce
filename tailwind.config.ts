@@ -11,7 +11,8 @@ const config: Config = {
     extend: {
       fontFamily: {
         satoshi: ["var(--font-satoshi)", "system-ui", "sans-serif"],
-        display: ["var(--font-fraunces)", "Georgia", "serif"],
+        body: ["var(--font-figtree)", "system-ui", "sans-serif"],
+        display: ["var(--font-bricolage)", "system-ui", "sans-serif"],
       },
       screens: {
         xs: "375px",
@@ -33,6 +34,11 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
+        selva: { DEFAULT: "#0E1A11", 2: "#15251A", 3: "#1D3323" },
+        hueso: "#EEE9DA",
+        bractea: { DEFAULT: "#E4472F", dark: "#C23621", soft: "#FF8A70" },
+        flor: { DEFAULT: "#7A4FC9", soft: "#B9A0F2" },
+        brote: "#C4DA8C",
         cream: "#F6F1E7",
         sand: "#ECE3D2",
         ink: "#1B2418",
