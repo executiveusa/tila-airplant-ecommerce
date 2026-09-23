@@ -20,6 +20,7 @@ Owners: Mexico side = Ivette (agent: Alex); USA side = Bambú (agent: Instinct).
 | `icm/stages/` | The six work stages (intake, listings, site, orders+shipping, buyer messages, learn). |
 | `icm/memory/` | Append-only business memory: carriers tried, sales, buyer questions, price moves, decisions, lessons. |
 | `icm/strategy/GTM-PLAN.md` | Standing go-to-market plan (organic only, zero spend). |
+| `icm/docs/MEXICO-SIDE-ONBOARDING.es.md` | Onboarding pack for the Mexico side (Ivette / Alex), es-MX, no secrets or infra. |
 | `icm/strategy/AVATARS.md` | 5 customer avatars (stages of awareness) for listing copy and pitch drafts. |
 | `ops/hermes/` | Hermes Agent profile for the Tila operator (config, SOUL, knowledge index). |
 | `ops/hermes/crons/` | Launch cron set - OFF until site final + social ready + owner go. Enable switch: `enable.sh`. |
