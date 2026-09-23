@@ -1,13 +1,18 @@
 "use client";
 import { useMemo, useState } from "react";
 import Image from "next/image";
-import { SIZES, MIN_ORDER, TIERS, tierIndex, nextTier, money, fmt, unit, type SizeKey } from "@/content/pricing";
+import { SIZES, MIN_ORDER, TIERS, tierIndex, nextTier, type SizeKey } from "@/content/pricing";
+import { useRate, unit as unitR, fmt, num, code } from "./rate";
+import { RateNote } from "./Money";
 import { COPY, WHATSAPP_NUMBER, type Lang } from "@/content/copy";
 
 const start: Record<SizeKey, number> = { chica: 30, mediana: 20, grande: 0, especial: 0 };
 
 export default function QuoteBuilder({ lang }: { lang: Lang }) {
   const c = COPY[lang];
+  const rate = useRate();
+  const unit = (p: number, l: Lang) => unitR(p, l, rate);
+  const money = (p: number, l: Lang) => fmt(unit(p, l), l);
   const [q, setQ] = useState<Record<SizeKey, number>>(start);
   const [copied, setCopied] = useState(false);
   const total = Object.values(q).reduce((a, b) => a + b, 0);
@@ -23,7 +28,7 @@ export default function QuoteBuilder({ lang }: { lang: Lang }) {
       (z) => z.prices ? `- ${c.sizes[z.key].name} (${z.cm}): ${q[z.key]} x ${money(z.prices[ti], lang)} = ${fmt(q[z.key] * unit(z.prices[ti], lang), lang)}` : `- ${c.sizes[z.key].name}: ${q[z.key]} (${c.quoteOnly})`
     );
     return [c.builder.messageIntro, ...lines, `${c.builder.total}: ${total}`, `${c.builder.subtotal}: ${fmt(subtotal, lang)}`, c.builder.messageOutro].join("\n");
-  }, [q, ti, total, subtotal, c, lang]);
+  }, [q, ti, total, subtotal, c, lang, rate]);
 
   const set = (k: SizeKey, v: number) => setQ((p) => ({ ...p, [k]: Math.max(0, Math.min(5000, Math.round(v) || 0)) }));
   const wa = WHATSAPP_NUMBER ? `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}` : "";
@@ -59,7 +64,7 @@ export default function QuoteBuilder({ lang }: { lang: Lang }) {
           <dt className="text-hueso/70">{c.builder.tierLabel}</dt>
           <dd className="text-right">{c.priceHead.tier(tier.min, tier.max)}</dd>
           <dt className="text-hueso/70">{c.builder.subtotal}</dt>
-          <dd className="text-right font-display text-3xl font-semibold tabular-nums">{fmt(subtotal, lang)}</dd>
+          <dd className="whitespace-nowrap text-right font-display text-3xl font-semibold tabular-nums">{num(subtotal, lang)}<span className="ml-1 text-sm font-semibold opacity-70">{code(lang)}</span></dd>
         </dl>
         <div className="h-2 overflow-hidden rounded-full bg-hueso/20" aria-hidden>
           <div className="h-full rounded-full bg-bractea transition-[width] duration-300" style={{ width: `${Math.min(100, barPct)}%` }} />
@@ -68,7 +73,7 @@ export default function QuoteBuilder({ lang }: { lang: Lang }) {
           {!ok ? c.builder.under(MIN_ORDER - total) : nt ? `${c.builder.ok} ${c.builder.next(nt.need, money(SIZES[0].prices![nt.index], lang))}` : `${c.builder.ok} ${c.builder.best}`}
         </p>
         {q.especial > 0 && <p className="text-xs text-hueso/70">{c.builder.specialLine}</p>}
-        <p className="text-xs text-hueso/60">{c.taxNote}</p>
+        <p className="text-xs text-hueso/60">{c.taxNote} <RateNote lang={lang} /></p>
         <div className="mt-auto flex flex-col gap-2">
           {wa && ok ? (
             <a href={wa} target="_blank" rel="noopener noreferrer" className="flex h-12 items-center justify-center rounded-full bg-bractea font-medium text-white hover:bg-bractea-dark">{c.builder.send}</a>

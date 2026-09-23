@@ -43,7 +43,7 @@ export function SmartHeader({ children }: { children: React.ReactNode }) {
 }
 
 // Thumb-reach order button on phones: shows after the hero, hides once the order builder is on screen.
-export function MobileOrderBar({ label, sub }: { label: string; sub: string }) {
+export function MobileOrderBar({ label, sub }: { label: string; sub: React.ReactNode }) {
   const [show, setShow] = useState(false);
   useEffect(() => {
     const target = document.getElementById("pedido");
