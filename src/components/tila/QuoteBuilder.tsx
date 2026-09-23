@@ -30,7 +30,7 @@ export default function QuoteBuilder({ lang }: { lang: Lang }) {
 
   return (
     <div className="grid gap-6 lg:grid-cols-[1.3fr_1fr]">
-      <ul className="divide-y divide-moss/15 rounded-2xl border border-moss/15 bg-white/70">
+      <ul className="divide-y divide-selva/15 rounded-2xl border border-selva/15 bg-white/70">
         {SIZES.map((z) => (
           <li key={z.key} className="flex items-center gap-3 p-3 sm:gap-4 sm:p-4">
             <Image src={z.image} alt="" width={64} height={64} className="h-14 w-14 flex-none sm:h-16 sm:w-16 rounded-xl object-cover" />
@@ -38,8 +38,8 @@ export default function QuoteBuilder({ lang }: { lang: Lang }) {
               <p className="font-medium text-ink">{c.sizes[z.key].name}</p>
               <p className="text-xs text-ink/60 sm:text-sm">{z.prices ? `${z.cm} · ${mxn(z.prices[ti])}` : c.quoteOnly}</p>
             </div>
-            <div className="flex items-center rounded-full border border-moss/25 bg-white">
-              <button type="button" aria-label="-10" onClick={() => set(z.key, q[z.key] - 10)} className="h-11 w-11 rounded-full text-lg text-moss hover:bg-sand">−</button>
+            <div className="flex items-center rounded-full border border-selva/25 bg-white">
+              <button type="button" aria-label="-10" onClick={() => set(z.key, q[z.key] - 10)} className="h-11 w-11 rounded-full text-lg text-selva hover:bg-hueso">−</button>
               <input
                 aria-label={`${c.builder.qty} ${c.sizes[z.key].name}`}
                 inputMode="numeric"
@@ -47,43 +47,43 @@ export default function QuoteBuilder({ lang }: { lang: Lang }) {
                 onChange={(e) => set(z.key, Number(e.target.value.replace(/\D/g, "")))}
                 className="w-12 bg-transparent text-center font-medium tabular-nums text-ink outline-none"
               />
-              <button type="button" aria-label="+10" onClick={() => set(z.key, q[z.key] + 10)} className="h-11 w-11 rounded-full text-lg text-moss hover:bg-sand">+</button>
+              <button type="button" aria-label="+10" onClick={() => set(z.key, q[z.key] + 10)} className="h-11 w-11 rounded-full text-lg text-selva hover:bg-hueso">+</button>
             </div>
           </li>
         ))}
       </ul>
-      <div className="flex flex-col gap-4 rounded-2xl bg-moss p-6 text-cream">
+      <div className="flex flex-col gap-4 rounded-2xl bg-selva p-6 text-hueso">
         <dl className="grid grid-cols-2 gap-y-3 text-sm">
-          <dt className="text-cream/70">{c.builder.total}</dt>
+          <dt className="text-hueso/70">{c.builder.total}</dt>
           <dd className="text-right text-lg font-medium tabular-nums">{total}</dd>
-          <dt className="text-cream/70">{c.builder.tierLabel}</dt>
+          <dt className="text-hueso/70">{c.builder.tierLabel}</dt>
           <dd className="text-right">{c.priceHead.tier(tier.min, tier.max)}</dd>
-          <dt className="text-cream/70">{c.builder.subtotal}</dt>
-          <dd className="text-right font-display text-3xl tabular-nums">{mxn(subtotal)}</dd>
+          <dt className="text-hueso/70">{c.builder.subtotal}</dt>
+          <dd className="text-right font-display text-3xl font-semibold tabular-nums">{mxn(subtotal)}</dd>
         </dl>
-        <div className="h-2 overflow-hidden rounded-full bg-cream/20" aria-hidden>
-          <div className="h-full rounded-full bg-clay transition-[width] duration-300" style={{ width: `${Math.min(100, barPct)}%` }} />
+        <div className="h-2 overflow-hidden rounded-full bg-hueso/20" aria-hidden>
+          <div className="h-full rounded-full bg-bractea transition-[width] duration-300" style={{ width: `${Math.min(100, barPct)}%` }} />
         </div>
-        <p className={`text-sm ${ok ? "text-cream" : "text-clay-light"}`} role="status">
+        <p className={`text-sm ${ok ? "text-hueso" : "text-bractea-soft"}`} role="status">
           {!ok ? c.builder.under(MIN_ORDER - total) : nt ? `${c.builder.ok} ${c.builder.next(nt.need, mxn(SIZES[0].prices![nt.index]))}` : `${c.builder.ok} ${c.builder.best}`}
         </p>
-        {q.especial > 0 && <p className="text-xs text-cream/70">{c.builder.specialLine}</p>}
-        <p className="text-xs text-cream/60">{c.taxNote}</p>
+        {q.especial > 0 && <p className="text-xs text-hueso/70">{c.builder.specialLine}</p>}
+        <p className="text-xs text-hueso/60">{c.taxNote}</p>
         <div className="mt-auto flex flex-col gap-2">
           {wa && ok ? (
-            <a href={wa} target="_blank" rel="noopener noreferrer" className="flex h-12 items-center justify-center rounded-full bg-clay font-medium text-white hover:bg-clay-dark">{c.builder.send}</a>
+            <a href={wa} target="_blank" rel="noopener noreferrer" className="flex h-12 items-center justify-center rounded-full bg-bractea font-medium text-white hover:bg-bractea-dark">{c.builder.send}</a>
           ) : (
-            <span className="flex h-12 items-center justify-center rounded-full bg-cream/15 text-sm text-cream/70">{ok ? c.builder.pending : c.builder.send}</span>
+            <span className="flex h-12 items-center justify-center rounded-full bg-hueso/15 text-sm text-hueso/70">{ok ? c.builder.pending : c.builder.send}</span>
           )}
           <button
             type="button"
             disabled={!ok}
             onClick={async () => { try { await navigator.clipboard.writeText(message); setCopied(true); setTimeout(() => setCopied(false), 1800); } catch {} }}
-            className="h-12 rounded-full border border-cream/40 text-sm font-medium hover:bg-cream/10 disabled:opacity-40"
+            className="h-12 rounded-full border border-hueso/40 text-sm font-medium hover:bg-hueso/10 disabled:opacity-40"
           >
             {copied ? c.builder.copied : c.builder.copy}
           </button>
-          <button type="button" onClick={() => setQ(start)} className="text-xs text-cream/60 underline underline-offset-4">{c.builder.reset}</button>
+          <button type="button" onClick={() => setQ(start)} className="text-xs text-hueso/60 underline underline-offset-4">{c.builder.reset}</button>
         </div>
       </div>
     </div>

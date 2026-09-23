@@ -17,3 +17,12 @@ const fraunces = localFont({
 });
 
 export { satoshi, fraunces };
+
+import { Bricolage_Grotesque, Figtree } from "next/font/google";
+
+// Tila visual world: display = Bricolage Grotesque (ink-trap swells echo the bulbosa's bulb and curling leaves),
+// body = Figtree (warm, open, very legible on phones). Chosen per the design law: derived from the project, not a default.
+const bricolage = Bricolage_Grotesque({ subsets: ["latin"], variable: "--font-bricolage", axes: ["opsz", "wdth"], display: "swap" });
+const figtree = Figtree({ subsets: ["latin"], variable: "--font-figtree", display: "swap" });
+
+export { bricolage, figtree };
