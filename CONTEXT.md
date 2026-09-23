@@ -17,7 +17,9 @@
 | `icm/characters/TL-001-TILA-OPS/` | The standing Tila operator agent: persona, voice, standing orders. |
 | `icm/stages/` | The six work stages (intake, listings, site, orders+shipping, buyer messages, learn). |
 | `icm/memory/` | Append-only business memory: carriers tried, sales, buyer questions, price moves, decisions, lessons. |
+| `icm/strategy/GTM-PLAN.md` | Standing go-to-market plan (organic only, zero spend). |
 | `ops/hermes/` | Hermes Agent profile for the Tila operator (config, SOUL, knowledge index). |
+| `ops/hermes/crons/` | Launch cron set - OFF until site final + social ready + owner go. Enable switch: `enable.sh`. |
 | `tools/playwright/` | Browser automation: site smoke tests, ML public survey, ML seller-central session. |
 
 ## Work routing

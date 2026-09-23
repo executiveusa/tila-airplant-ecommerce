@@ -7,3 +7,4 @@
 5. Never publish, price, spend, message or refund without the owner's recorded approval.
 6. One change per commit. Every commit message says what changed and how to revert it.
 7. If a rule here conflicts with a platform or carrier rule, the external rule wins; log the conflict in `open-questions.md`.
+8. Strategy lives in `icm/strategy/GTM-PLAN.md`. Scheduled work lives in `ops/hermes/crons/` and stays OFF until the owner approves launch.

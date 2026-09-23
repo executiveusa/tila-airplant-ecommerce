@@ -1,0 +1,69 @@
+# Tila launch cron set - ALL OFF until launch.
+# Owner of every job: TL-001-TILA-OPS (icm/characters/TL-001-TILA-OPS). District: Tila / Jardines Indigo.
+# Activation condition: site final + social media ready, AND the owner says go (record in icm/memory/decisions.md).
+# Runtime: Hermes cron (https://hermes-agent.nousresearch.com/docs/user-guide/features/cron/).
+# Schedules run in the host's local time - set host TZ to America/Mexico_City before installing.
+# Every job is read-only / draft-only. None may publish, price, spend, message buyers or refund.
+launch_switch: off            # the owner flips this; enable.sh refuses while it is off
+district: tila-jardines-indigo
+owner_agent: TL-001-TILA-OPS
+workdir: /opt/tila/repo
+jobs:
+  - name: tila-ml-inbox
+    schedule: "every 30m"
+    enabled: false
+    browser: true
+    prompt: >-
+      You are TL-001 (read AGENTS.md first). Using the saved seller session .auth/ml-seller.json, check
+      MercadoLibre seller central READ-ONLY for new orders, buyer questions, messages and claims since the last
+      entry in icm/stages/01_intake/output/intake-log.md. Log each item there. Draft replies per
+      icm/stages/05_buyer-messages/CONTEXT.md into that stage's output folder. Do not send anything. If there is
+      nothing new, reply [SILENT]. If the session is expired or a captcha appears, stop and report it.
+  - name: tila-shipment-tracking
+    schedule: "every 1d at 12:30"
+    enabled: false
+    browser: true
+    prompt: >-
+      You are TL-001 (read AGENTS.md first). For every open shipment in icm/memory/shipping-carriers.md, check
+      tracking status read-only in ML seller central. Update days-in-transit and arrival condition. Flag any order
+      past its promised date. Nothing new -> [SILENT].
+  - name: tila-reputation-check
+    schedule: "every 1d at 08:15"
+    enabled: false
+    browser: true
+    prompt: >-
+      You are TL-001 (read AGENTS.md first). Read-only: record the ML reputation color, claims, cancellations,
+      late-shipment and response-time metrics into icm/memory/lessons.md under a dated 'Reputation' line only if
+      any metric changed. Flag any drop toward yellow/orange with the cause. Unchanged -> [SILENT].
+  - name: tila-site-health
+    schedule: "every 1d at 07:10"
+    enabled: false
+    browser: true
+    prompt: >-
+      You are TL-001 (read AGENTS.md first). Run: TILA_BASE_URL=$TILA_BASE_URL PW_CHANNEL=chrome npm run test:site.
+      If all pass reply [SILENT]. If anything fails, write the failure and screenshot path to
+      icm/stages/03_site/output/ and report it. Do not change site code.
+  - name: tila-competitor-watch
+    schedule: "0 9 * * 1"
+    enabled: false
+    browser: true
+    prompt: >-
+      You are TL-001 (read AGENTS.md first). Run npx tsx tools/playwright/ml/survey-listings.ts "tillandsia bulbosa"
+      once and save the JSON to icm/stages/02_listings/output/<date>-survey.json. Compare prices and listing quality
+      with our lots (icm/memory/price-moves.csv). Write up to 3 proposals with evidence. Never change a price.
+  - name: tila-weekly-review
+    schedule: "0 18 * * 0"
+    enabled: false
+    browser: false
+    prompt: >-
+      You are TL-001 (read AGENTS.md first). Do stage 06 (icm/stages/06_learn/CONTEXT.md): read the last 7 days of
+      icm/memory ledgers, write icm/stages/06_learn/output/<date>-review.md with what sold, repeat questions,
+      shipping results, and at most 3 proposed changes. Report the summary for the owner.
+  - name: tila-social-drafts
+    schedule: "0 10 * * 2,5"
+    enabled: false
+    browser: false
+    prompt: >-
+      You are TL-001 (read AGENTS.md first). Draft 2 organic social posts (ES) from real material only: new photos
+      in public/images/tila, recent approved buyer questions, shipping/packing evidence. Follow EMERALD_TABLETS II
+      and the charity-wording rule. Save to icm/stages/02_listings/output/<date>-social-drafts.md. Do not post.

@@ -34,5 +34,6 @@ training:
     - icm/characters/TL-001-TILA-OPS/VOICE.md
     - icm/characters/TL-001-TILA-OPS/STANDING-ORDERS.md
     - docs/shipping/SHIPPING.md
+    - icm/strategy/GTM-PLAN.md
     - icm/memory/decisions.md
     - icm/memory/open-questions.md
