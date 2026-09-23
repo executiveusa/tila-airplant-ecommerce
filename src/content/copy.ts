@@ -171,7 +171,7 @@ export const COPY: Record<Lang, Copy> = {
     priceSub: "The price drops with the total number of plants in your order, however you mix the sizes.",
     priceHead: { size: "Size", tier: (min, max) => (max ? `${min}-${max} plants` : `${min}+ plants`) },
     resale: "Priced below retail Tillandsia bulbosa listings on MercadoLibre Mexico (September 2026).",
-    taxNote: "Prices in Mexican pesos. [VAT, invoicing and shipping cost: to be confirmed].",
+    taxNote: "Prices in US dollars, converted from our peso prices at the September 23, 2026 rate (1 USD = 17.28 MXN) and rounded up. [VAT, invoicing and shipping cost: to be confirmed].",
     howTitle: "How it works",
     how: [
       { t: "Build your order", d: "Pick how many plants you want in each size. 50 minimum in total." },

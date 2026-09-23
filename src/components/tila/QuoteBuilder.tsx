@@ -1,7 +1,7 @@
 "use client";
 import { useMemo, useState } from "react";
 import Image from "next/image";
-import { SIZES, MIN_ORDER, TIERS, tierIndex, nextTier, mxn, type SizeKey } from "@/content/pricing";
+import { SIZES, MIN_ORDER, TIERS, tierIndex, nextTier, money, fmt, unit, type SizeKey } from "@/content/pricing";
 import { COPY, WHATSAPP_NUMBER, type Lang } from "@/content/copy";
 
 const start: Record<SizeKey, number> = { chica: 30, mediana: 20, grande: 0, especial: 0 };
@@ -12,7 +12,7 @@ export default function QuoteBuilder({ lang }: { lang: Lang }) {
   const [copied, setCopied] = useState(false);
   const total = Object.values(q).reduce((a, b) => a + b, 0);
   const ti = tierIndex(total);
-  const subtotal = SIZES.reduce((s, z) => s + (z.prices ? q[z.key] * z.prices[ti] : 0), 0);
+  const subtotal = SIZES.reduce((s, z) => s + (z.prices ? q[z.key] * unit(z.prices[ti], lang) : 0), 0);
   const nt = nextTier(total);
   const barPct = total < MIN_ORDER ? (total / MIN_ORDER) * 100 : nt ? ((total - TIERS[ti].min) / (TIERS[nt.index].min - TIERS[ti].min)) * 100 : 100;
   const ok = total >= MIN_ORDER;
@@ -20,10 +20,10 @@ export default function QuoteBuilder({ lang }: { lang: Lang }) {
 
   const message = useMemo(() => {
     const lines = SIZES.filter((z) => q[z.key] > 0).map(
-      (z) => z.prices ? `- ${c.sizes[z.key].name} (${z.cm}): ${q[z.key]} x ${mxn(z.prices[ti])} = ${mxn(q[z.key] * z.prices[ti])}` : `- ${c.sizes[z.key].name}: ${q[z.key]} (${c.quoteOnly})`
+      (z) => z.prices ? `- ${c.sizes[z.key].name} (${z.cm}): ${q[z.key]} x ${money(z.prices[ti], lang)} = ${fmt(q[z.key] * unit(z.prices[ti], lang), lang)}` : `- ${c.sizes[z.key].name}: ${q[z.key]} (${c.quoteOnly})`
     );
-    return [c.builder.messageIntro, ...lines, `${c.builder.total}: ${total}`, `${c.builder.subtotal}: ${mxn(subtotal)}`, c.builder.messageOutro].join("\n");
-  }, [q, ti, total, subtotal, c]);
+    return [c.builder.messageIntro, ...lines, `${c.builder.total}: ${total}`, `${c.builder.subtotal}: ${fmt(subtotal, lang)}`, c.builder.messageOutro].join("\n");
+  }, [q, ti, total, subtotal, c, lang]);
 
   const set = (k: SizeKey, v: number) => setQ((p) => ({ ...p, [k]: Math.max(0, Math.min(5000, Math.round(v) || 0)) }));
   const wa = WHATSAPP_NUMBER ? `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}` : "";
@@ -36,7 +36,7 @@ export default function QuoteBuilder({ lang }: { lang: Lang }) {
             <Image src={z.image} alt="" width={64} height={64} className="h-14 w-14 flex-none sm:h-16 sm:w-16 rounded-xl object-cover" />
             <div className="min-w-0 flex-1">
               <p className="font-medium text-ink">{c.sizes[z.key].name}</p>
-              <p className="text-xs text-ink/60 sm:text-sm">{z.prices ? `${z.cm} · ${mxn(z.prices[ti])}` : c.quoteOnly}</p>
+              <p className="text-xs text-ink/60 sm:text-sm">{z.prices ? `${z.cm} · ${money(z.prices[ti], lang)}` : c.quoteOnly}</p>
             </div>
             <div className="flex items-center rounded-full border border-selva/25 bg-white">
               <button type="button" aria-label="-10" onClick={() => set(z.key, q[z.key] - 10)} className="h-11 w-11 rounded-full text-lg text-selva hover:bg-hueso">−</button>
@@ -59,13 +59,13 @@ export default function QuoteBuilder({ lang }: { lang: Lang }) {
           <dt className="text-hueso/70">{c.builder.tierLabel}</dt>
           <dd className="text-right">{c.priceHead.tier(tier.min, tier.max)}</dd>
           <dt className="text-hueso/70">{c.builder.subtotal}</dt>
-          <dd className="text-right font-display text-3xl font-semibold tabular-nums">{mxn(subtotal)}</dd>
+          <dd className="text-right font-display text-3xl font-semibold tabular-nums">{fmt(subtotal, lang)}</dd>
         </dl>
         <div className="h-2 overflow-hidden rounded-full bg-hueso/20" aria-hidden>
           <div className="h-full rounded-full bg-bractea transition-[width] duration-300" style={{ width: `${Math.min(100, barPct)}%` }} />
         </div>
         <p className={`text-sm ${ok ? "text-hueso" : "text-bractea-soft"}`} role="status">
-          {!ok ? c.builder.under(MIN_ORDER - total) : nt ? `${c.builder.ok} ${c.builder.next(nt.need, mxn(SIZES[0].prices![nt.index]))}` : `${c.builder.ok} ${c.builder.best}`}
+          {!ok ? c.builder.under(MIN_ORDER - total) : nt ? `${c.builder.ok} ${c.builder.next(nt.need, money(SIZES[0].prices![nt.index], lang))}` : `${c.builder.ok} ${c.builder.best}`}
         </p>
         {q.especial > 0 && <p className="text-xs text-hueso/70">{c.builder.specialLine}</p>}
         <p className="text-xs text-hueso/60">{c.taxNote}</p>

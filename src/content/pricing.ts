@@ -47,3 +47,17 @@ export const mxn = (n: number) =>
 
 // All current photos are Tila's own (sent by the owner 2026-09-23), so no third-party credits.
 export const CREDITS: { file: string; author: string; license: string; url: string }[] = [];
+
+// English page shows USD. Base prices stay in MXN; USD = MXN / rate, rounded UP to the next $0.05
+// so the dollar price always covers the peso price.
+// Rate source: open.er-api.com, updated 2026-09-23 00:02 UTC: 1 USD = 17.2836 MXN.
+export const USD_MXN = 17.2836;
+export const RATE_DATE = "2026-09-23";
+export type Cur = "es" | "en";
+export const unit = (mxnPrice: number, lang: Cur) =>
+  lang === "en" ? Math.ceil((mxnPrice / USD_MXN) * 20 - 1e-9) / 20 : mxnPrice;
+export const fmt = (n: number, lang: Cur) =>
+  lang === "en"
+    ? new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(n)
+    : mxn(n);
+export const money = (mxnPrice: number, lang: Cur) => fmt(unit(mxnPrice, lang), lang);
