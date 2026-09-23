@@ -98,7 +98,6 @@ export const COPY: Record<Lang, Copy> = {
     origin: [
       "La Tillandsia bulbosa crece de forma natural en el sur de México, Centroamérica y el Caribe. Su base en forma de bulbo y sus hojas rizadas la hacen fácil de reconocer, y cuando florece se pinta de rojo y morado.",
       "Nosotros mismos las cultivamos en Proyecto Indigo Azul, en Puerto Vallarta. Son plantas cultivadas, no extraídas del monte.",
-      "Cada pedido apoya a New World Kids (nwkids.org). [Texto pendiente de aprobación]",
     ],
     originCaption: "Cúmulo de Tillandsia bulbosa en flor",
     builderTitle: "Arma tu pedido",
@@ -191,7 +190,6 @@ export const COPY: Record<Lang, Copy> = {
     origin: [
       "Tillandsia bulbosa grows wild in southern Mexico, Central America and the Caribbean. Its bulb-shaped base and curly leaves make it easy to spot, and when it blooms it turns red and purple.",
       "We grow them ourselves at Proyecto Indigo Azul in Puerto Vallarta. They are cultivated, not taken from the wild.",
-      "Every order supports New World Kids (nwkids.org). [Wording pending approval]",
     ],
     originCaption: "A cluster of Tillandsia bulbosa in bloom",
     builderTitle: "Build your order",
