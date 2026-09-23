@@ -16,13 +16,13 @@ Tila vende **Tillandsia bulbosa** (planta aérea) **al mayoreo** dentro de Méxi
 | Nombre del negocio | **Tila** (negocio, agente y sitio usan el mismo nombre) | Confirmado por Bambú |
 | Producto | Tillandsia bulbosa en lotes de mayoreo (mínimo 50 plantas) | Confirmado |
 | Origen | Cultivada por nosotros en Proyecto Indigo Azul, Puerto Vallarta, Jalisco. Son plantas cultivadas, no extraídas del monte | Confirmado por Bambú |
+| Tipo de negocio | Con fines de lucro | Confirmado por Bambú |
 | Mercado | Solo México en la fase 1 | Plan |
 | Canal principal | Mercado Libre México | Plan |
 | Respaldo de confianza | Sitio web de Tila (español e inglés). Hoy es una versión de prueba, no pública | Borrador |
 | Mercadotecnia | Solo orgánica. **Sin anuncios pagados**, arranque con inversión cero | Acuerdo del 23-09-2026 |
 | Precio por planta | 42 / 60 / 85 MXN (chica / mediana / grande) | **Borrador, sin confirmar** |
 | Lotes propuestos | Lote 50 Chica 2,100 · Mediana 3,000 · Grande 4,250 · Mixto 2,900 MXN | **Borrador, sin confirmar** |
-| Causa social | Parte de las ventas apoyaría a New World Kids (nwkids.org). El texto público requiere aprobación de HSI | **Pendiente** |
 
 **Nuestra ventaja:** la mayoría de los vendedores de plantas en Mercado Libre tiene publicaciones débiles: fotos borrosas, descripciones de tres líneas, sin sitio web y sin pruebas. Tila compite con publicaciones completas (fotos reales, historia de origen, tabla de tamaños, guía de cuidados, garantía) respaldadas por un sitio propio, y con una reputación sólida en Mercado Libre (respuesta rápida, envíos a tiempo, buenas reseñas).
 
@@ -59,7 +59,7 @@ Además de las personas y sus asistentes, el negocio tendrá un agente permanent
 - Borradores de respuesta para compradores.
 - La memoria del negocio: pedidos, preguntas, resultados de envío, precios y aprendizajes.
 
-**De qué nunca se encarga:** dinero, precios, publicar, enviar mensajes, elegir paquetería, reembolsos y textos de causa social. Tila **prepara** y la persona responsable **decide**.
+**De qué nunca se encarga:** dinero, precios, publicar, enviar mensajes, elegir paquetería y reembolsos. Tila **prepara** y la persona responsable **decide**.
 
 **Cómo aprende:** registra cada pedido, pregunta, envío y discusión de precio. Cada semana revisa esos registros y propone como máximo **tres cambios**, cada uno con evidencia. Las propuestas del lado México se presentan a Ivette.
 
@@ -90,7 +90,7 @@ Además de las personas y sus asistentes, el negocio tendrá un agente permanent
 4. Nunca publicar, cambiar precios, gastar, enviar mensajes ni reembolsar sin la aprobación registrada de Ivette.
 5. Si una regla interna contradice una regla de Mercado Libre o de la paquetería, prevalece la regla externa y se registra el conflicto.
 6. Sin anuncios pagados.
-7. Sin textos de causa social hasta tener el texto aprobado por HSI.
+7. Tila es un negocio con fines de lucro; se retiró la lógica de New World Kids y de destino de las ventas.
 
 ---
 

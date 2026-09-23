@@ -9,6 +9,5 @@
 - [ ] Contact WhatsApp / email for the site
 - [x] Final brand name: Tila (business = agent = site), decided 2026-09-23 - see decisions.md
 - [ ] Vivero / SEMARNAT registration status for cultivated native plants
-- [ ] HSI-approved charity wording
 - [ ] Set up the Tila collaboration on the i2i lane with Alex (Ivette's Instinct): what Tila information may be shared both ways (owner decision)
 - [ ] Ivette to confirm she owns MercadoLibre México decisions (listings, prices, buyer messages, shipping, refunds) for Tila

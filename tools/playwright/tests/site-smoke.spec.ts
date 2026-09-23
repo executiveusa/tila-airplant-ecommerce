@@ -23,11 +23,9 @@ for (const path of ["/", "/en/"]) {
       imgs.filter((i) => !(i as HTMLImageElement).complete || (i as HTMLImageElement).naturalWidth === 0).map((i) => (i as HTMLImageElement).src)
     );
     expect(broken).toEqual([]);
-    // Charity line must carry the pending tag until HSI-approved wording lands.
+    // For-profit business (ruling 2026-09-23 14:33): no New World Kids text on the site.
     const body = await page.locator("body").innerText();
-    if (/New World Kids|nwkids/i.test(body)) {
-      expect(body).toMatch(/pendiente de aprobaci|pending approval/i);
-    }
+    expect(body).not.toMatch(/New World Kids|nwkids/i);
     expect(errors).toEqual([]);
   });
 }

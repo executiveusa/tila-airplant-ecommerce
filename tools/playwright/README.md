@@ -2,7 +2,7 @@
 
 | Script | What | Login? | Side effects |
 |---|---|---|---|
-| `tests/site-smoke.spec.ts` | Site loads on / and /en at 390px + 1280px, all images load, noindex still on, charity line still tagged pending | No | None |
+| `tests/site-smoke.spec.ts` | Site loads on / and /en at 390px + 1280px, all images load, noindex still on, no New World Kids text on the page | No | None |
 | `ml/survey-listings.ts` | Top 20 public ML results for a query (title, price, URL) | No | None; max once a day |
 | `ml/seller-login.ts` | Headed login to save a seller-central session | Yes (Infisical env) | Writes `.auth/ml-seller.json` (gitignored) |
 
@@ -15,7 +15,7 @@ PW_CHANNEL=chrome npm run test:site                 # use system Chrome instead 
 One browser job at a time on the host.
 
 ## ES-MX
-- `tests/site-smoke.spec.ts`: verifica que `/` y `/en` carguen a 390 px y 1280 px, que todas las imágenes carguen, que siga activo noindex y que el texto de causa social conserve la etiqueta de pendiente. Sin inicio de sesión ni efectos.
+- `tests/site-smoke.spec.ts`: verifica que `/` y `/en` carguen a 390 px y 1280 px, que todas las imágenes carguen, que siga activo noindex y que no aparezca texto de New World Kids. Sin inicio de sesión ni efectos.
 - `ml/survey-listings.ts`: las 20 primeras publicaciones públicas de Mercado Libre para una búsqueda (título, precio, liga). Sin inicio de sesión; máximo una vez al día; se detiene ante un captcha.
 - `ml/seller-login.ts`: inicio de sesión con navegador visible para guardar la sesión de vendedor; credenciales desde Infisical; el código de verificación lo captura una persona; la sesión se guarda en `.auth/` (fuera de git).
 Un trabajo de navegador a la vez en el servidor.

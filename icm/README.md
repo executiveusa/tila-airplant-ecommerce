@@ -23,8 +23,8 @@ Alex (Ivette's Instinct) <-i2i-> Instinct (Bambú's)
 
 ## Non-learnable (self-learning may never rewrite)
 - Owner authority, money authority, approval gates.
-- Entity boundaries (Tila commercial vs New World Kids / HSI / Indigo Azul program).
-- Charity wording approval rule.
+- Ownership and entity boundaries (Mexico side / USA side).
+- For-profit status (New World Kids / proceeds logic removed).
 - Secrets policy.
 - Platform and carrier rules (only update from a cited source).
 
@@ -40,6 +40,6 @@ Capa operativa del negocio Tila. El sistema de archivos es la memoria del agente
 
 **Ciclo de cada tarea:** 1) ENTRADA (etapa 01): qué, canal, impacto económico y quién aprueba; 2) TRABAJO en una etapa (02-05); 3) EVIDENCIA; 4) APROBACIÓN de la persona responsable de ese lado cuando la política lo exija; 5) REGISTRO en la bitácora; 6) APRENDIZAJE semanal (etapa 06) con propuestas basadas en evidencia.
 
-**No se puede modificar por aprendizaje automático:** autoridad de las personas responsables, autoridad sobre dinero y controles de aprobación; límites de entidades; regla de textos de causa social; política de secretos; reglas de plataforma y paquetería (solo se actualizan con fuente citada).
+**No se puede modificar por aprendizaje automático:** autoridad de las personas responsables, autoridad sobre dinero y controles de aprobación; límites de entidades y responsables; negocio con fines de lucro (sin lógica de New World Kids); política de secretos; reglas de plataforma y paquetería (solo se actualizan con fuente citada).
 
 **Se puede mejorar con evidencia:** títulos, orden de fotos, estructura de descripciones, lotes y tamaños que se venden, respuestas frecuentes (siempre aprobadas al enviarse), empaque, elección de paquetería por región y propuestas de precio (siempre aprobadas).

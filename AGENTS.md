@@ -18,7 +18,7 @@ Do not load the whole repo into context. One stage, one bounded change, evidence
 - Secrets never live in this repo. Use the references in `icm/_config/secrets-map.md`.
 - Nothing goes public (site DNS, listing publish, buyer message, price change) without the right owner's approval recorded in `icm/memory/decisions.md` (Mexico side: Ivette; USA side: Bambú; shared: both).
 - No paid ads. Organic only, zero-spend start (ruling 2026-09-23).
-- New World Kids / proceeds wording stays DRAFT until HSI approves the exact text.
+- Tila is a for-profit business. New World Kids / proceeds logic removed (ruling 2026-09-23 14:33).
 - Every change is one atomic, revertible commit.
 - Human-facing docs are bilingual: English and Mexican Spanish (Mexico City business register, usted).
 
@@ -40,6 +40,6 @@ No cargue todo el repositorio. Una etapa, un cambio acotado, evidencia registrad
 - Ningún secreto se guarda en este repositorio; use las referencias de `icm/_config/secrets-map.md`.
 - Nada se hace público (DNS del sitio, publicaciones, mensajes a compradores, cambios de precio) sin la aprobación de la persona responsable registrada en `icm/memory/decisions.md` (lado México: Ivette; lado EE. UU.: Bambú; asuntos compartidos: ambos).
 - Sin anuncios pagados: solo crecimiento orgánico, arranque con inversión cero (acuerdo del 23-09-2026).
-- Los textos sobre New World Kids o destino de las ventas siguen en BORRADOR hasta que HSI apruebe el texto exacto.
+- Tila es un negocio con fines de lucro; se retiró la lógica de New World Kids y de destino de las ventas (acuerdo del 23-09-2026, 14:33).
 - Cada cambio es un commit atómico y reversible.
 - La documentación para personas es bilingüe: inglés y español de México (registro de negocios de la CDMX, en usted).
