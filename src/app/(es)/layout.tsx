@@ -3,8 +3,8 @@ import "@/styles/globals.css";
 import { satoshi, fraunces } from "@/styles/fonts";
 
 export const metadata: Metadata = {
-  title: "Tila · Tillandsias al mayoreo desde Puerto Vallarta",
-  description: "Tillandsias al mayoreo cultivadas en Puerto Vallarta. Pedido mínimo 50 plantas, cuatro tallas, precio por planta publicado.",
+  title: "Tila · Tillandsia bulbosa al mayoreo desde Puerto Vallarta",
+  description: "Tillandsia bulbosa al mayoreo desde Puerto Vallarta. Pedido mínimo 50 plantas, tres tallas y cúmulos, precio por planta publicado.",
   robots: { index: false, follow: false },
 };
 

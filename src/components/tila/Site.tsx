@@ -51,8 +51,7 @@ export default function Site({ lang }: { lang: Lang }) {
               <p className="mt-6 text-sm text-ink/60"><span className="font-medium text-ink">{c.heroPrice(mxn(SIZES[0].prices![0]))}</span></p>
             </div>
             <div className="relative aspect-[4/3] overflow-hidden rounded-[28px] bg-sand md:aspect-[4/5]">
-              <Image src="/images/tila/hero-vivero.jpg" alt={c.hero.photoAlt} fill priority sizes="(min-width: 768px) 50vw, 100vw" className="object-cover" />
-              <span className="absolute left-3 top-3 rounded-full bg-ink/60 px-2.5 py-1 text-[10px] font-medium uppercase tracking-wider text-cream backdrop-blur">{c.refPhoto}</span>
+              <Image src="/images/tila/bulbosa-mediana.jpg" alt={c.hero.photoAlt} fill priority sizes="(min-width: 768px) 50vw, 100vw" className="object-cover" />
             </div>
           </div>
         </section>
@@ -71,7 +70,6 @@ export default function Site({ lang }: { lang: Lang }) {
               <article key={z.key} className="group overflow-hidden rounded-3xl border border-moss/10 bg-white">
                 <div className="relative aspect-square overflow-hidden bg-sand">
                   <Image src={z.image} alt={`${c.sizes[z.key].name}: ${c.sizes[z.key].examples}`} fill sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw" className="object-cover transition-transform duration-500 group-hover:scale-[1.03] motion-reduce:transition-none" />
-                  <span className="absolute left-3 top-3 rounded-full bg-ink/60 px-2.5 py-1 text-[10px] font-medium uppercase tracking-wider text-cream backdrop-blur">{c.refPhoto}</span>
                 </div>
                 <div className="p-5">
                   <div className="flex items-baseline justify-between gap-2">
@@ -160,9 +158,9 @@ export default function Site({ lang }: { lang: Lang }) {
           <div className="mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-2">
             <figure>
               <div className="relative aspect-[4/5] overflow-hidden rounded-[28px] bg-sand">
-                <Image src="/images/tila/ionantha-rubor.jpg" alt={c.originCaption} fill loading="eager" sizes="(min-width:768px) 50vw, 100vw" className="object-cover" />
+                <Image src="/images/tila/bulbosa-cumulo.jpg" alt={c.originCaption} fill loading="eager" sizes="(min-width:768px) 50vw, 100vw" className="object-cover" />
               </div>
-              <figcaption className="mt-3 text-xs text-ink/50">{c.refPhoto} · {c.originCaption}</figcaption>
+              <figcaption className="mt-3 text-xs text-ink/50">{c.originCaption}</figcaption>
             </figure>
             <div>
               <h2 className="font-display text-3xl leading-tight text-ink md:text-5xl">{c.originTitle}</h2>
@@ -206,13 +204,13 @@ export default function Site({ lang }: { lang: Lang }) {
           <p className="font-display text-3xl text-cream">tila<span className="text-clay">.</span></p>
           <p className="mt-2">{c.footer.tagline}</p>
           <p className="mt-1 text-sm text-cream/60">{c.footer.contact}</p>
-          <details className="mt-8 text-xs text-cream/55">
+          {CREDITS.length > 0 && (<details className="mt-8 text-xs text-cream/55">
             <summary className="cursor-pointer">{c.footer.credits}</summary>
             <p className="mt-2">{c.footer.creditsIntro}</p>
             <ul className="mt-2 space-y-1">
               {CREDITS.map((cr) => <li key={cr.file}><a href={cr.url} className="underline underline-offset-2" target="_blank" rel="noopener noreferrer">{cr.author}</a> · {cr.license}</li>)}
             </ul>
-          </details>
+          </details>)}
           <p className="mt-8 text-xs text-cream/40">{c.footer.rights}</p>
         </div>
       </footer>

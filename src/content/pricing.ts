@@ -1,4 +1,4 @@
-// Tila wholesale price list (MXN per plant). PROPOSAL - pending owner approval.
+// Tila wholesale price list - Tillandsia bulbosa only (MXN per plant). PROPOSAL - pending owner approval.
 // Basis: MercadoLibre Mexico retail listings read 2026-09-23 (see PRICING-BASIS.md).
 // Rule: wholesale sits ~50-60% under the per-plant price of retail multi-packs,
 // so a reseller can roughly double it and still land inside the MercadoLibre range.
@@ -23,10 +23,10 @@ export type Size = {
 };
 
 export const SIZES: Size[] = [
-  { key: "chica", cm: "5-10 cm", prices: [38, 33, 28], image: "/images/tila/ionantha-par.jpg" },
-  { key: "mediana", cm: "12-19 cm", prices: [75, 65, 55], image: "/images/tila/mediana-streptophylla.jpg" },
-  { key: "grande", cm: "20-35 cm", prices: [140, 120, 100], image: "/images/tila/grande-tectorum.jpg" },
-  { key: "especial", cm: "Xerographica", prices: null, image: "/images/tila/especial-xerographica.jpg" },
+  { key: "chica", cm: "8-12 cm", prices: [42, 36, 30], image: "/images/tila/bulbosa-chica.jpg" },
+  { key: "mediana", cm: "13-18 cm", prices: [60, 52, 45], image: "/images/tila/bulbosa-mediana.jpg" },
+  { key: "grande", cm: "19-25 cm", prices: [85, 74, 64], image: "/images/tila/bulbosa-grande.jpg" },
+  { key: "especial", cm: "", prices: null, image: "/images/tila/bulbosa-cumulo.jpg" },
 ];
 
 export function nextTier(total: number): { need: number; index: number } | null {
@@ -45,13 +45,5 @@ export function tierIndex(total: number): number {
 export const mxn = (n: number) =>
   new Intl.NumberFormat("es-MX", { style: "currency", currency: "MXN", maximumFractionDigits: 0 }).format(n);
 
-export const CREDITS = [
-  { file: "hero-vivero.jpg", author: "cultivar413", license: "CC BY 2.0", url: "https://commons.wikimedia.org/wiki/File:210820_005_SD_Botanic_Garden_-_Plant_Shop,_Tillandsia_%27Victoria%27,_Tillandsia_tectorum_var_globosa,_Tillandsia_%27Green_Star%27,_Tillandsia_paleacea_(Flaca),_Tillandsia_brachycaulos.jpg" },
-  { file: "ionantha-par.jpg", author: "Agnes Monkelbaan", license: "CC BY-SA 4.0", url: "https://commons.wikimedia.org/wiki/File:Tillandsia_ionantha_(luchtplantje)._20-12-2020._(actm.)_01.jpg" },
-  { file: "grande-tectorum.jpg", author: "Fen37", license: "CC0", url: "https://commons.wikimedia.org/wiki/File:Tillandsia_tectorum.jpg" },
-  { file: "especial-xerographica.jpg", author: "Mokkie", license: "CC BY-SA 4.0", url: "https://commons.wikimedia.org/wiki/File:Tillandsia_xerographica_2.jpg" },
-  { file: "ionantha-rubor.jpg", author: "Mokkie", license: "CC BY-SA 4.0", url: "https://commons.wikimedia.org/wiki/File:Blushing_Bride_Airplant_(Tillandsia_ionantha).jpg" },
-  { file: "mediana-streptophylla.jpg", author: "salchu", license: "CC BY-SA 2.0", url: "https://commons.wikimedia.org/wiki/File:Tillandsia_streptophylla_(6140977688).jpg" },
-  { file: "flor-stricta-unused.jpg", author: "Agnieszka Kwiecień, Nova", license: "CC BY-SA 4.0", url: "https://commons.wikimedia.org/wiki/File:Tillandsia_stricta_2021-09-03_01.jpg" },
-  { file: "xerographica-estilo.jpg", author: "Cavabienmerci", license: "CC BY-SA 4.0", url: "https://commons.wikimedia.org/wiki/File:Tillandsia_Xerographica_as_a_houseplant.jpg" },
-];
+// All current photos are Tila's own (sent by the owner 2026-09-23), so no third-party credits.
+export const CREDITS: { file: string; author: string; license: string; url: string }[] = [];

@@ -1,19 +1,30 @@
 # Tila - pricing basis (DRAFT, pending owner approval)
 
+Scope: Tillandsia bulbosa only (owner steer, 2026-09-23: "Update the site to be about tilanda bulbosas. That's the brand we have").
+
 Source: MercadoLibre Mexico retail listings, read 2026-09-23 (signed-out search pages
-listado.mercadolibre.com.mx/tillandsia, /tillandsia-lote, /tillandsia-ionantha,
-/tillandsia-xerographica, /tillandsia-mayoreo). Prices are listing prices incl. IVA as shown; per-plant = pack price / count.
+listado.mercadolibre.com.mx/bulbosa-planta-aerea, /tillandsia, /tillandsia-lote, /tillandsia-mayoreo).
+Prices are listing prices incl. IVA as shown; per-plant = pack price / count.
 
-| Size | Retail comps (per plant) | Wholesale 50-199 / 200-499 / 500+ |
-|---|---|---|
-| Chica 5-10 cm | Singles $145-$329 (fuchsii $145, bulbosa $215-245, ionantha $265-329). Packs: Schubertii 20 pzas $999 (~$50), Baileyi 10 pzas $449 (~$45), Nizandensis 10 pzas $699 (~$70), 20 pzas mixed $1,500 (~$75), Kit 10 ionantha $999 (~$100), 5 ionantha 8-10 cm $689 (~$138) | $38 / $33 / $28 |
-| Mediana 12-20 cm | Singles: caput-medusae 15 cm $329, chica $395. Packs: 10 caput-medusae $1,199-$1,200 (~$120), 5 caput $799-$900 (~$160-180), juncea 15 cm x3 $599 (~$200) | $75 / $65 / $55 |
-| Grande 20-35 cm | Singles: caput grande $645, caput 35 cm $699. Packs: 5 grandes 15-30 cm $949 (~$190), 5 x 20 cm $999 (~$200), kit 3 grandes $1,199 (~$400) | $140 / $120 / $100 |
-| Especial (xerographica) | Singles: chica $1,045, L $1,199, gigante 30-40 cm $1,500 | QUOTE ONLY until vivero/UMA legality is confirmed (earlier draft: $520 / $460 / $400) |
+## Bulbosa comps
+- "Tillandsia Bulbosa - Planta De Interior - Aérea Natural": $215 (single)
+- "Tillandsia Bulbosa - Planta Aerea, Air Plant, Planta Natural": $245 (single)
+- No bulbosa multi-packs found on MercadoLibre. For context, small mixed tillandsia packs run
+  ~$45-$75 per plant (Schubertii 20 pzas $999, Baileyi 10 pzas $449, Nizandensis 10 pzas $699, 20 mixed $1,500).
 
-Rule used: wholesale ~50-60% under the per-plant price of retail multi-packs. Site copy only claims "below MercadoLibre retail"; the old "retail is double" line was removed. (Background: US wholesalers advise resellers they can
-double, e.g. airplantcity.com/pages/wholesale-air-plant.) Prices still land inside
-the MercadoLibre range. Tiers go by total plants in the order (mix and match), minimum 50.
+## Proposed wholesale (MXN per plant, by total plants in the order)
 
-Open: IVA/factura, shipping cost, which species Indigo Azul actually has per size, and
-legal status for commercial sale of native tillandsias (NOM-059-SEMARNAT / vivero or UMA registration).
+| Bulbosa size | 50-199 | 200-499 | 500+ | Reseller at ~2x |
+|---|---|---|---|---|
+| Chica 8-12 cm | $42 | $36 | $30 | ~$84 |
+| Mediana 13-18 cm | $60 | $52 | $45 | ~$120 |
+| Grande 19-25 cm | $85 | $74 | $64 | ~$170 |
+| Cúmulo | quote | quote | quote | - |
+
+Rule used: a reseller who doubles the 50-199 price still lands under the $215-$245 MercadoLibre single price.
+Site copy only claims "por debajo del menudeo de Tillandsia bulbosa en MercadoLibre". Size ranges are a
+proposal (bulbosa typically 10-20 cm, larger plants up to ~25 cm) and need the owner's real grading.
+(Background: US wholesalers advise resellers they can double, e.g. airplantcity.com/pages/wholesale-air-plant.)
+
+Open: real cost per plant, size grades, IVA/factura, shipping, cluster pricing, and legal status for
+commercial sale (T. bulbosa is native to southern Mexico; vivero/UMA registration with SEMARNAT not verified).
