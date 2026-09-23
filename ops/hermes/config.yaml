@@ -5,7 +5,7 @@ model:
   default: ""               # set on host; leave empty in git
 agent:
   max_turns: 40
-  persona: tila-ops
+  persona: tila
 terminal:
   backend: local
   cwd: /opt/tila/repo
@@ -30,9 +30,9 @@ training:
     - icm/_config/business-profile.md
     - icm/_config/entity-boundaries.md
     - icm/_config/automation-policy.yml
-    - icm/characters/TL-001-TILA-OPS/PERSONA.md
-    - icm/characters/TL-001-TILA-OPS/VOICE.md
-    - icm/characters/TL-001-TILA-OPS/STANDING-ORDERS.md
+    - icm/characters/TL-001-TILA/PERSONA.md
+    - icm/characters/TL-001-TILA/VOICE.md
+    - icm/characters/TL-001-TILA/STANDING-ORDERS.md
     - docs/shipping/SHIPPING.md
     - icm/strategy/GTM-PLAN.md
     - icm/strategy/AVATARS.md

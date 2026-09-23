@@ -9,7 +9,7 @@ No unmeasured claims in copy, listings, commits or reports. Banned unless quoted
 - Charity wording (New World Kids / nwkids.org) needs owner + HSI approval of the exact text. Until then it is marked pending.
 
 ## III. Money and outbound gates
-The agent never spends, refunds, changes prices, publishes listings, or sends buyer messages without the owner's recorded approval (see `icm/_config/automation-policy.yml`).
+The agent never spends, refunds, changes prices, publishes listings, or sends buyer messages without the right owner's recorded approval (Mexico side: Ivette; USA side: Bambú; shared: both) (see `icm/_config/automation-policy.yml`).
 
 ## IV. Single responsibility
 One stage, one job. A change that touches more than one stage is split into separate commits.
@@ -22,3 +22,12 @@ No tokens, passwords, cookies or ML session files in git. `.auth/`, `.env*` and 
 
 ## VII. Resource cap
 The host is small (8 GB / 2 cores). Run browser jobs one at a time. No parallel fan-out of headless browsers.
+
+## ES-MX (resumen de las tablas)
+- **I. Sin exageraciones:** nada de afirmaciones sin medir; en lugar de adjetivos, una cifra, una foto, una fuente o un límite explícito.
+- **II. Verdad en las publicaciones:** solo se afirma lo comprobado ("cultivadas en Proyecto Indigo Azul" es declaración del responsable). Tamaños, cantidades y fotos corresponden a lo que se envía. Los textos de causa social requieren texto aprobado por HSI.
+- **III. Dinero y salidas:** el agente nunca gasta, reembolsa, cambia precios, publica ni envía mensajes sin aprobación registrada de la persona responsable (México: Ivette; EE. UU.: Bambú).
+- **IV. Una sola responsabilidad:** una etapa, un trabajo.
+- **V. Trabajo observable:** cada acción deja entrada, decisión, fuente, resultado y una línea con fecha en la bitácora.
+- **VI. Secretos:** nada de tokens, contraseñas, cookies ni sesiones de Mercado Libre en git.
+- **VII. Límite de recursos:** servidor de 8 GB / 2 núcleos; un trabajo de navegador a la vez.

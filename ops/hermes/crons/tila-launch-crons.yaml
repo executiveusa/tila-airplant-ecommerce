@@ -1,12 +1,13 @@
 # Tila launch cron set - ALL OFF until launch.
-# Owner of every job: TL-001-TILA-OPS (icm/characters/TL-001-TILA-OPS). District: Tila / Jardines Indigo.
-# Activation condition: site final + social media ready, AND the owner says go (record in icm/memory/decisions.md).
+# Owner of every job: TL-001-TILA (icm/characters/TL-001-TILA). District: Tila / Jardines Indigo.
+# Activation condition: site final + social media ready, AND go from both owners - Ivette (Mexico store jobs) and Bambú (host) - recorded in icm/memory/decisions.md.
+# Condición de activación: sitio terminado + redes listas + visto bueno de Ivette y de Bambú, registrado en decisions.md.
 # Runtime: Hermes cron (https://hermes-agent.nousresearch.com/docs/user-guide/features/cron/).
 # Schedules run in the host's local time - set host TZ to America/Mexico_City before installing.
 # Every job is read-only / draft-only. None may publish, price, spend, message buyers or refund.
 launch_switch: off            # the owner flips this; enable.sh refuses while it is off
 district: tila-jardines-indigo
-owner_agent: TL-001-TILA-OPS
+owner_agent: TL-001-TILA
 workdir: /opt/tila/repo
 jobs:
   - name: tila-ml-inbox

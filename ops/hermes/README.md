@@ -1,4 +1,4 @@
-# Tila Hermes profile
+# Tila Hermes profile / Perfil de Hermes de Tila
 
 Hermes Agent (NousResearch) is the runtime. This folder is the Tila operator's profile: config, persona (SOUL.md) and knowledge index. The Hermes code itself is installed on the host, not vendored here.
 
@@ -21,3 +21,10 @@ Verify `HERMES_HOME` is honored by the installed version (`hermes --help` / docs
 - The repo working copy at `/opt/tila/repo` (filesystem MCP limited to this path).
 - Playwright scripts in `tools/playwright/` via the terminal tool.
 - Nothing else by default. Add MCP servers only with owner approval.
+
+## ES-MX
+Hermes Agent (NousResearch) es el entorno de ejecución. Esta carpeta es el perfil del agente Tila: configuración, personalidad (`SOUL.md`) e índice de conocimiento. El código de Hermes se instala en el servidor, no se copia al repositorio.
+
+**Instalación en el servidor (la hace quien opera prod-city-1):** 1) instalar Hermes con el instalador oficial; 2) usar un directorio propio `HERMES_HOME=/opt/tila/.hermes` para que Tila no comparta memoria con otros agentes; 3) copiar `config.yaml` y `SOUL.md`; 4) crear `$HERMES_HOME/.env` desde Infisical (nombres en `.env.example`), nunca en git.
+
+**Alcance:** solo la copia del repositorio en `/opt/tila/repo`, los scripts de `tools/playwright/` y nada más sin aprobación. Tareas programadas: `crons/` (apagadas hasta el lanzamiento).

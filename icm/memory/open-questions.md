@@ -10,3 +10,5 @@
 - [ ] Final brand name "Tila"
 - [ ] Vivero / SEMARNAT registration status for cultivated native plants
 - [ ] HSI-approved charity wording
+- [ ] Set up the Tila collaboration on the i2i lane with Alex (Ivette's Instinct): what Tila information may be shared both ways (owner decision)
+- [ ] Ivette to confirm she owns MercadoLibre México decisions (listings, prices, buyer messages, shipping, refunds) for Tila

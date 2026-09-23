@@ -1,4 +1,4 @@
-# Shipping Tila bulbosa lots inside Mexico
+# Shipping Tila bulbosa lots inside Mexico / Envío de lotes de bulbosa Tila dentro de México
 
 Researched 2026-09-23. Every rule below has a source. Re-check sources older than 30 days before relying on a price.
 
@@ -52,3 +52,58 @@ We do not yet know the packed weight. If one lot packs at 1-2 kg, ML charges the
 2. Approve checking the plant category / Mercado Envíos rules inside seller central (read-only).
 3. Pick the backup method if ML's carriers refuse plants: Paquetexpress perishable (ocurre, no insurance), local pickup in PV, or a Flex courier once reputation is yellow.
 4. Guarantee policy for damaged arrivals.
+
+---
+
+# ES-MX - Envío de lotes de bulbosa dentro de México
+Investigación del 23-09-2026; las fuentes son las mismas de la versión en inglés (arriba). Antes de usar un precio con más de 30 días, vuelva a verificarlo. Este tema es del lado México: las decisiones las aprueba Ivette.
+
+## 1. Hallazgo principal: la mayoría de las paqueterías prohíbe plantas vivas
+| Paquetería | ¿Plantas vivas? |
+|---|---|
+| Estafeta | **Prohibido**: "Plantas, vegetales, semillas y animales vivos o muertos" (lista oficial y manual de empaque). |
+| 99minutos | **Prohibido**: "Plantas y material vegetal" (páginas oficiales para desarrolladores, incluida la de Mercado Libre Flex). |
+| Paquetexpress | **Aceptado con condiciones** como "Mercancías perecederas (origen animal o vegetal)": sin control de temperatura, solo entrega en sucursal (ocurre), empaque que evite aplastamiento, sin hielo seco, **sin seguro**, flete pagado en origen. |
+| DHL Express México | Sin confirmar; su guía indica consultar la lista con el ejecutivo de cuenta. |
+| FedEx México | Sin confirmar; el sitio bloqueó la consulta. |
+| Redpack | Sin confirmar en su sitio; un artículo del sector incluye "plantas vivas o muertas" entre las prohibiciones habituales. |
+| Correos de México | La ley prohíbe perecederos y animales vivos; plantas sin confirmar. |
+
+En la práctica, otros viveros sí envían bulbosas por todo México, pero las reglas escritas son estrictas. Lo correcto es confirmar en el panel de vendedor de Mercado Libre si la categoría de plantas admite Mercado Envíos antes de la primera publicación, y tener un respaldo que cumpla las reglas (servicio de perecederos de Paquetexpress).
+
+## 2. Cómo funciona Mercado Envíos
+- **Colecta, Agencias y Full** usan la misma tabla por peso y precio. Desde 299 MXN el envío es gratis para el comprador y lo paga el vendedor.
+- **Costo para el vendedor con reputación verde, producto de 999 MXN o más:** 0.5-1 kg 74.50; 1-2 kg 84.50; 2-3 kg 95; 3-4 kg 103; 4-5 kg 110 MXN.
+- **Cuenta nueva (sin reputación):** paga la tarifa completa, aproximadamente el doble.
+- **Flex:** el vendedor entrega con vehículo propio o mensajería Flex; requiere reputación amarilla o verde, por lo que no está disponible desde el primer día.
+- **Full:** Mercado Libre almacena y envía; no conviene para plantas vivas.
+- Enviar con guía propia fuera de Mercado Libre solo es posible si la publicación no está obligada a Mercado Envíos; verificarlo en el panel.
+
+## 3. Empaque de un lote de 50 bulbosas (sin tierra)
+- Hidratar 24 horas antes y dejar secar por completo; nunca empacar húmedas, porque se pudren en la caja.
+- Envolver en papel seco (periódico o kraft), agrupadas por tamaño, sin bolsas de plástico.
+- Caja de cartón firme con algunas perforaciones de ventilación; relleno de papel para que no se muevan.
+- Enviar de lunes a miércoles para que la caja no pase el fin de semana en bodega.
+- Etiqueta: "PLANTAS VIVAS - NO APLASTAR - ESTE LADO ARRIBA".
+- Foto de la caja abierta y cerrada en cada pedido (evidencia ante reclamos).
+- Incluir una tarjeta de cuidados y la liga a la página de cuidados del sitio.
+
+## 4. Costo por lote de 50 (estimado; pesar un lote real)
+Aún no conocemos el peso empacado. Si un lote pesa entre 1 y 2 kg, Mercado Libre cobra alrededor de 84.50 MXN con reputación verde y cerca del doble mientras la cuenta es nueva; sobre un lote de 2,100 a 4,250 MXN equivale a entre 2 % y 8 %. La tarifa es igual para cualquier estado.
+
+## 5. Tiempos de entrega y seguro
+- Mercado Envíos muestra al comprador la fecha prometida; los tiempos reales se registrarán en `icm/memory/shipping-carriers.md`.
+- El servicio de perecederos de Paquetexpress **no incluye seguro**.
+- La bulbosa tolera varios días en caja si viaja seca; la tolerancia real de nuestras plantas está por medirse.
+
+## 6. Aspectos legales
+- El Apéndice II de CITES solo incluye algunas Tillandsia (harrisii, kammii, kautskyi, mauryana, sprengeliana, sucrei, xerographica); la bulbosa no está en esa lista, y la venta es nacional.
+- NOM-059-SEMARNAT-2010: el estatus de la bulbosa **no está verificado**; confirmar antes de afirmar algo.
+- Los viveros comerciales de especies silvestres nativas pueden requerir registro ante SEMARNAT (UMA o PIMVS); el estatus de Proyecto Indigo Azul está pendiente.
+- Mercado Libre colabora con PROFEPA y WCS para retirar publicaciones de especies protegidas, por lo que es importante demostrar que las plantas son cultivadas.
+
+## 7. Decisiones pendientes (lado México: Ivette)
+1. Pesar y medir un lote de 50 ya empacado.
+2. Autorizar la revisión, solo lectura, de las reglas de la categoría y de Mercado Envíos en el panel de vendedor.
+3. Elegir el respaldo si las paqueterías de Mercado Libre rechazan plantas: perecederos de Paquetexpress (sucursal, sin seguro), entrega en Puerto Vallarta o mensajería Flex más adelante.
+4. Política de garantía por daños en tránsito.

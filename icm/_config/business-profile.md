@@ -1,4 +1,6 @@
-# Business profile (stable facts; cite source when changing)
+# Business profile / Perfil del negocio (stable facts; cite source when changing)
+
+**Owners / Responsables:** Mexico side = Ivette (agent: Alex); USA side = Bambú (agent: Instinct). Standing agent: Tila (TL-001). (Bambú, WhatsApp 2026-09-23 13:59)
 
 | Fact | Value | Source |
 |---|---|---|
@@ -13,5 +15,8 @@
 | ML seller account | jardinesindigo@gmail.com (password in Infisical, see secrets-map) | Owner handoff |
 | Site preview | https://tila.2.25.241.209.sslip.io (draft, noindex) | Deploy 2026-09-23 |
 
-## Open (owner decides)
+## Open (owner decides) / Pendientes
 Real size grades, final prices, contact WhatsApp/email, shipping method, factura/IVA, guarantee policy, final brand name "Tila", vivero / SEMARNAT registration status.
+
+## ES-MX
+Producto: Tillandsia bulbosa (planta aérea) en lotes de mayoreo. Origen: cultivada por nosotros en Proyecto Indigo Azul, Puerto Vallarta, Jalisco. Mercado: solo México en la fase 1. Canales: Mercado Libre (principal) y el sitio de Tila como respaldo de confianza. Mercadotecnia: solo orgánica, sin anuncios. Precios y lotes: BORRADOR, sin confirmar (42/60/85 MXN por planta; lotes de 50 a 2,100 / 3,000 / 4,250 / 2,900 MXN). Causa social: el texto público requiere aprobación de HSI. Pendientes: tamaños reales, precios finales, contacto, método de envío, factura/IVA, garantía, nombre final y registro del vivero ante SEMARNAT.

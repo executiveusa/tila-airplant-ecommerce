@@ -1,12 +1,18 @@
-version: 1
+version: 2
 business: Tila
-owner: Bambú
+owners:
+  usa_side: Bambú (Jeremy)          # decides USA-side matters; his agent: Instinct (Bambú's)
+  mexico_side: Ivette               # decides Mexico-side matters; her agent: Alex (Ivette's Instinct)
+approval_rule: "Everything needs to be approved by her or me or both." # Bambú, 2026-09-13; co-management ruling 2026-09-23
 characters:
   - id: TL-001
-    name: TILA-OPS
+    name: Tila
     status: draft_pending_owner_review
-    role: Standing operator for the Tila site and MercadoLibre store
+    role: Standing operator for the Tila site and MercadoLibre store / Operador permanente del sitio y la tienda en Mercado Libre
     lanes: [mercadolibre-listings, site, orders-shipping, buyer-messages, learning]
-    languages: [Spanish, English]
+    languages: [es-MX, en]
     runtime: ops/hermes
     repo: executiveusa/tila-airplant-ecommerce
+    collaborating_agents:
+      - Instinct (Bambú) - USA side, repo/infra owner side
+      - Alex (Ivette's Instinct) - Mexico side, via Instinct-to-Instinct (i2i) lane

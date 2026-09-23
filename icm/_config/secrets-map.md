@@ -1,4 +1,6 @@
-# Secrets map - references only, never values
+# Secrets map / Mapa de secretos - references only, never values / solo referencias, nunca valores
+
+Side note: these secrets live on Bambú's side (Infisical). They never travel to the Mexico side through chat or i2i; if Ivette's side needs account access, she is set up with her own access. / Estos secretos están del lado de Bambú y nunca se envían por chat ni por i2i.
 
 | Need | Where it lives | How the agent gets it |
 |---|---|---|

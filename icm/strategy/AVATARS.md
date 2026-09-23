@@ -1,5 +1,7 @@
 > Customer avatars for Tila (5 stages of awareness), 2026-09-23. Used by stage 02 (listing copy) and B2B pitch drafts. DRAFT research - update from real buyer evidence in icm/memory/buyer-questions.md and sales-log.csv.
 
+> **ES-MX - Resumen.** Cinco perfiles de comprador según las etapas de conciencia de Schwartz: 1) *Marcela*, viverista tradicional en GDL (no conoce la categoría; acercamiento personal, semanas 3-6); 2) *Diego*, dueño de empresa de regalos corporativos en CDMX (siente el problema; cliente principal, semanas 2-4); 3) *Paola*, organizadora de bodas destino en Puerto Vallarta (conoce la solución, cree que solo hay importadas; argumento: cultivadas en su ciudad, entrega en el recinto, fechas garantizadas por escrito); 4) *Rodrigo*, revendedor en Mercado Libre (nos encuentra solo; la publicación es su argumento de venta, lote Mixto como prueba); 5) *Lucía*, estudio de eventos en MTY con compras recurrentes (retención: nivel de lealtad, recompra con un mensaje, referidos). Documento interno en BORRADOR; se actualiza con evidencia real de compradores. Detalle completo en inglés a continuación.
+
 # TILA WHOLESALE - 5 BUYER AVATARS (Schwartz stages of awareness)
 Offer: cultivated Tillandsia bulbosa wholesale packs (min 50), grown at Proyecto Indigo Azul, Puerto Vallarta, ships inside Mexico, proceeds support nwkids.org. Buyers are MX businesses. All avatars DRAFT - internal strategy docs, not for publishing.
 
