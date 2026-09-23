@@ -50,7 +50,7 @@ export default function Site({ lang }: { lang: Lang }) {
               </div>
               <p className="mt-6 text-sm text-ink/60"><span className="font-medium text-ink">{c.heroPrice(mxn(SIZES[0].prices![0]))}</span></p>
             </div>
-            <div className="relative aspect-[4/3] overflow-hidden rounded-[28px] md:aspect-[4/5]">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-[28px] bg-sand md:aspect-[4/5]">
               <Image src="/images/tila/hero-vivero.jpg" alt={c.hero.photoAlt} fill priority sizes="(min-width: 768px) 50vw, 100vw" className="object-cover" />
               <span className="absolute left-3 top-3 rounded-full bg-ink/60 px-2.5 py-1 text-[10px] font-medium uppercase tracking-wider text-cream backdrop-blur">{c.refPhoto}</span>
             </div>
@@ -69,7 +69,7 @@ export default function Site({ lang }: { lang: Lang }) {
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {SIZES.map((z) => (
               <article key={z.key} className="group overflow-hidden rounded-3xl border border-moss/10 bg-white">
-                <div className="relative aspect-square overflow-hidden">
+                <div className="relative aspect-square overflow-hidden bg-sand">
                   <Image src={z.image} alt={`${c.sizes[z.key].name}: ${c.sizes[z.key].examples}`} fill sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw" className="object-cover transition-transform duration-500 group-hover:scale-[1.03] motion-reduce:transition-none" />
                   <span className="absolute left-3 top-3 rounded-full bg-ink/60 px-2.5 py-1 text-[10px] font-medium uppercase tracking-wider text-cream backdrop-blur">{c.refPhoto}</span>
                 </div>
@@ -159,8 +159,8 @@ export default function Site({ lang }: { lang: Lang }) {
         <section className="px-5 py-16 sm:px-8 md:py-24">
           <div className="mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-2">
             <figure>
-              <div className="relative aspect-[4/5] overflow-hidden rounded-[28px]">
-                <Image src="/images/tila/ionantha-rubor.jpg" alt={c.originCaption} fill sizes="(min-width:768px) 50vw, 100vw" className="object-cover" />
+              <div className="relative aspect-[4/5] overflow-hidden rounded-[28px] bg-sand">
+                <Image src="/images/tila/ionantha-rubor.jpg" alt={c.originCaption} fill loading="eager" sizes="(min-width:768px) 50vw, 100vw" className="object-cover" />
               </div>
               <figcaption className="mt-3 text-xs text-ink/50">{c.refPhoto} · {c.originCaption}</figcaption>
             </figure>
