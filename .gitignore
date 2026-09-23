@@ -35,3 +35,11 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 /out
+
+# Tila ops: secrets and browser state never in git
+.auth/
+.env
+.env.*
+!ops/hermes/.env.example
+test-results/
+playwright-report/

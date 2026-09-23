@@ -1,0 +1,35 @@
+version: 1
+system: tila-ops
+updated: 2026-09-23
+
+agent_allowed:
+  - read_ml_seller_central_and_public_listings
+  - draft_listings_titles_descriptions_photo_order
+  - draft_buyer_replies
+  - run_site_build_and_playwright_smoke_tests
+  - deploy_to_draft_preview_with_noindex
+  - research_carriers_rules_and_rates_with_sources
+  - log_orders_questions_prices_and_lessons_to_icm_memory
+  - propose_price_or_listing_changes_with_evidence
+  - open_github_issues_and_branches
+
+owner_approval_required:
+  - publish_or_unpause_any_ml_listing
+  - change_any_price_or_lot_size
+  - send_any_buyer_message
+  - buy_shipping_labels_or_insurance_or_packaging
+  - choose_or_change_carrier
+  - issue_refund_cancel_or_dispute_response
+  - point_public_dns_or_remove_noindex
+  - publish_charity_or_proceeds_wording
+  - spend_any_money_including_ads
+
+prohibited:
+  - paid_ads_of_any_kind   # owner ruling 2026-09-23
+  - commit_tokens_passwords_cookies_or_storage_state
+  - claim_wild_harvest_free_or_certified_without_source
+  - claim_tax_deductible_or_percentage_of_proceeds
+  - parallel_headless_browser_fan_out
+  - close_an_owner_gate_without_recorded_owner_words
+
+approval_record: icm/memory/decisions.md

@@ -1,0 +1,12 @@
+# Open questions
+- [ ] Real size grades (chica/mediana/grande) and cm ranges
+- [ ] Final prices (draft 42/60/85 MXN) and lot sizes
+- [ ] Packed weight + box size of one 50-plant lot (drives shipping cost band)
+- [ ] Does MercadoLibre accept live-plant listings with Mercado Envíos in the chosen category? (verify in seller central when creating the first draft)
+- [ ] Shipping method if ML carriers refuse plants (see docs/shipping/SHIPPING.md options)
+- [ ] Guarantee policy (e.g., photo within 24-48h of delivery if plants arrive damaged)
+- [ ] Factura / IVA
+- [ ] Contact WhatsApp / email for the site
+- [ ] Final brand name "Tila"
+- [ ] Vivero / SEMARNAT registration status for cultivated native plants
+- [ ] HSI-approved charity wording

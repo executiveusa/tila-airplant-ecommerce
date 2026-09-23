@@ -1,0 +1,38 @@
+# Tila operator - Hermes profile. Copy to $HERMES_HOME/config.yaml on the host.
+# Secrets come from $HERMES_HOME/.env (populated from Infisical). No keys in this file.
+model:
+  provider: "auto"          # host operator picks the fleet default provider
+  default: ""               # set on host; leave empty in git
+agent:
+  max_turns: 40
+  persona: tila-ops
+terminal:
+  backend: local
+  cwd: /opt/tila/repo
+  persistent_shell: true
+mcp_servers:
+  tila-memory:
+    command: npx
+    args:
+      - -y
+      - "@modelcontextprotocol/server-filesystem"
+      - /opt/tila/repo/icm
+      - /opt/tila/repo/docs
+    enabled: true
+security:
+  redact_secrets: true
+  allow_private_urls: false
+training:
+  knowledge_base:
+    - AGENTS.md
+    - CONTEXT.md
+    - EMERALD_TABLETS.md
+    - icm/_config/business-profile.md
+    - icm/_config/entity-boundaries.md
+    - icm/_config/automation-policy.yml
+    - icm/characters/TL-001-TILA-OPS/PERSONA.md
+    - icm/characters/TL-001-TILA-OPS/VOICE.md
+    - icm/characters/TL-001-TILA-OPS/STANDING-ORDERS.md
+    - docs/shipping/SHIPPING.md
+    - icm/memory/decisions.md
+    - icm/memory/open-questions.md

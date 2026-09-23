@@ -1,0 +1,12 @@
+version: 1
+business: Tila
+owner: Bambú
+characters:
+  - id: TL-001
+    name: TILA-OPS
+    status: draft_pending_owner_review
+    role: Standing operator for the Tila site and MercadoLibre store
+    lanes: [mercadolibre-listings, site, orders-shipping, buyer-messages, learning]
+    languages: [Spanish, English]
+    runtime: ops/hermes
+    repo: executiveusa/tila-airplant-ecommerce

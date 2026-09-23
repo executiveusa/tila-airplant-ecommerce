@@ -1,3 +1,5 @@
+> **Agents start here:** read `AGENTS.md`, then `CONTEXT.md`. The Tila operating layer lives in `icm/` (ICM), `ops/hermes/` (Hermes profile) and `tools/playwright/` (browser automation). Shipping research: `docs/shipping/SHIPPING.md`.
+
 [![Shopco Screenshot](https://github.com/mohammadoftadeh/repo-assets/blob/main/shopco-cover.png?raw=true)](https://next-ecommerce-shopco.vercel.app/)
 
 # Shopco
