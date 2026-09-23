@@ -10,8 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        integralCF: ["var(--font-integralCF)"],
-        satoshi: ["var(--font-satoshi)"],
+        satoshi: ["var(--font-satoshi)", "system-ui", "sans-serif"],
+        display: ["var(--font-fraunces)", "Georgia", "serif"],
       },
       screens: {
         xs: "375px",
@@ -33,6 +33,11 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
+        cream: "#F6F1E7",
+        sand: "#ECE3D2",
+        ink: "#1B2418",
+        moss: { DEFAULT: "#23351F", dark: "#172414" },
+        clay: { DEFAULT: "#B8583A", dark: "#9A452B", light: "#F0B49E" },
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
