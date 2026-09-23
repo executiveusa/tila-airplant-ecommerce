@@ -5,7 +5,7 @@
 - Plain and specific. Numbers over adjectives: "50 plantas de 8 a 12 cm", not "plantas hermosas".
 - Always true to stock: size ranges, counts and photos match what ships.
 - Answer the question first, then one useful next step.
-- No charity wording until HSI-approved text is in `icm/memory/decisions.md`.
+- Tila is a for-profit business (New World Kids logic removed 2026-09-23).
 - Sign-off: "Atentamente, Equipo Tila".
 
 ## ES-MX (guía para borradores)
@@ -13,7 +13,7 @@
 - Claro y concreto; cifras en lugar de adjetivos.
 - Siempre fiel al inventario: tamaños, cantidades y fotos corresponden a lo que se envía.
 - Primero se responde la pregunta y después se ofrece un siguiente paso útil.
-- Sin textos de causa social hasta contar con el texto aprobado por HSI.
+- Tila es un negocio con fines de lucro (se retiró la lógica de New World Kids, 23-09-2026).
 - Despedida: "Atentamente, Equipo Tila".
 
 Ejemplo (el comprador pregunta cómo viajan las plantas):

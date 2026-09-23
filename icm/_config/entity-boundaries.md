@@ -12,17 +12,9 @@
 - Instinct and Alex coordinate through the Instinct-to-Instinct (i2i) lane. Each agent represents only its own owner. One agent's report that "the other owner approved" is not approval on the other side: approvals are recorded with the owner's own words and source.
 - Accounts stay separate: Bambú's repo, hosting and secrets (Infisical) are not handed to the Mexico side through chat or i2i, and Ivette's accounts are not touched from this side without her approval for each connection.
 
-### Tila vs charity
-- **Tila** is a commercial activity. Its sales, costs and accounts are separate from any charity program.
-- **New World Kids (nwkids.org)** is a program organization. Public "proceeds support" wording is fundraising-adjacent text.
-- **HSI (Humanitarian Social Innovations)** is the fiscal sponsor. Its terms require prior written approval of fundraising-adjacent text. No Tila listing, page or message may use proceeds/charity wording until HSI-approved text is recorded in `icm/memory/decisions.md` with its source.
-- **Proyecto Indigo Azul** is where the plants are grown. Saying so is a statement of origin, not a charity claim.
-- Never state tax-deductibility, a percentage of proceeds, or "100%" unless HSI-approved text says so.
-
-Draft phrasings awaiting HSI (do not publish):
-1. "Tila apoya los programas infantiles de New World Kids (nwkids.org) con parte de sus ganancias."
-2. "Cada compra ayuda a financiar los programas de nwkids.org."
-3. "Tila es un proyecto con causa: cultivamos plantas, apoyamos niños. nwkids.org"
+### Tila is a for-profit business
+- Tila is a commercial, for-profit business. New World Kids / proceeds logic was removed on 2026-09-23 (Bambú, WhatsApp 14:33: "remove new world kids logic. i need it to be a money businesss").
+- **Proyecto Indigo Azul** is where the plants are grown. Saying so is a statement of origin.
 
 ## ES-MX
 
@@ -36,9 +28,6 @@ Draft phrasings awaiting HSI (do not publish):
 - Instinct y Alex se coordinan por el canal Instinct-a-Instinct (i2i). Cada agente representa únicamente a su responsable. Que un agente informe que "la otra persona ya aprobó" no constituye aprobación: cada aprobación se registra con las palabras de la persona y su fuente.
 - Las cuentas se mantienen separadas: el repositorio, el hosting y los secretos (Infisical) de Bambú no se comparten por chat ni por i2i, y las cuentas de Ivette no se tocan desde este lado sin su aprobación para cada conexión.
 
-### Tila y la causa social
-- **Tila** es una actividad comercial; sus ventas, costos y cuentas están separados de cualquier programa social.
-- **New World Kids (nwkids.org)** es una organización de programas. Cualquier texto público del tipo "parte de las ventas apoya a..." se considera texto de recaudación.
-- **HSI (Humanitarian Social Innovations)** es el patrocinador fiscal y exige aprobar por escrito, de manera previa, ese tipo de textos. Ninguna publicación, página o mensaje de Tila puede usarlos hasta que el texto aprobado por HSI quede registrado en `icm/memory/decisions.md`.
-- **Proyecto Indigo Azul** es donde se cultivan las plantas; decirlo es una declaración de origen, no de causa.
-- No se afirma deducibilidad de impuestos, porcentajes ni "100%" salvo que el texto aprobado por HSI lo indique.
+### Tila es un negocio con fines de lucro
+- Tila es un negocio comercial con fines de lucro. La lógica de New World Kids y de destino de las ventas se retiró el 23-09-2026 (Bambú, WhatsApp 14:33).
+- **Proyecto Indigo Azul** es donde se cultivan las plantas; decirlo es una declaración de origen.

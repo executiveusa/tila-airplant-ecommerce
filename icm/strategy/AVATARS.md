@@ -3,7 +3,7 @@
 > **ES-MX - Resumen.** Cinco perfiles de comprador según las etapas de conciencia de Schwartz: 1) *Marcela*, viverista tradicional en GDL (no conoce la categoría; acercamiento personal, semanas 3-6); 2) *Diego*, dueño de empresa de regalos corporativos en CDMX (siente el problema; cliente principal, semanas 2-4); 3) *Paola*, organizadora de bodas destino en Puerto Vallarta (conoce la solución, cree que solo hay importadas; argumento: cultivadas en su ciudad, entrega en el recinto, fechas garantizadas por escrito); 4) *Rodrigo*, revendedor en Mercado Libre (nos encuentra solo; la publicación es su argumento de venta, lote Mixto como prueba); 5) *Lucía*, estudio de eventos en MTY con compras recurrentes (retención: nivel de lealtad, recompra con un mensaje, referidos). Documento interno en BORRADOR; se actualiza con evidencia real de compradores. Detalle completo en inglés a continuación.
 
 # TILA WHOLESALE - 5 BUYER AVATARS (Schwartz stages of awareness)
-Offer: cultivated Tillandsia bulbosa wholesale packs (min 50), grown at Proyecto Indigo Azul, Puerto Vallarta, ships inside Mexico, proceeds support nwkids.org. Buyers are MX businesses. All avatars DRAFT - internal strategy docs, not for publishing.
+Offer: cultivated Tillandsia bulbosa wholesale packs (min 50), grown at Proyecto Indigo Azul, Puerto Vallarta, ships inside Mexico. Buyers are MX businesses. All avatars DRAFT - internal strategy docs, not for publishing.
 
 =====================================================================
 AVATAR 1 - UNAWARE: "Marcela, la viverista tradicional"
@@ -65,7 +65,7 @@ Wants to gain: a catalog item competitors can't copy. Wants to be: the creative 
 H - Empathy Map:
 Seeing: the same ten products in every competitor's deck. Thinking: "necesito algo que nadie mas traiga." Hearing: clients saying "quiero algo eco, pero bonito." Feeling: hungry, slightly burned by suppliers. Saying: "mandame cotizacion y fotos." Doing: scrolling Pinterest at midnight, WhatsApping three suppliers with the same brief, comparing who answers first.
 
-How Tila reaches him: this is the primary pitch target. Lead with the differentiator he can resell upstream: native Mexican air plants, cultivated at a named project in PV, min 50 pieces, wholesale sheet with real photos, live arrival. Once HSI approves the wording, the cause line - proceeds supporting children's programs - is the slide his clients' CSR departments put in their own reports.
+How Tila reaches him: this is the primary pitch target. Lead with the differentiator he can resell upstream: native Mexican air plants, cultivated at a named project in PV, min 50 pieces, wholesale sheet with real photos, live arrival.
 
 =====================================================================
 AVATAR 3 - SOLUTION AWARE: "Paola, la wedding planner"
@@ -96,7 +96,7 @@ Wants to gain: a reliable local favor source with real volume. Wants to be: the 
 H - Empathy Map:
 Seeing: Pinterest boards full of air-plant favors she can't source locally at scale. Thinking: "si existiera aqui, seria perfecto." Hearing: couples saying "we want something really Mexican, but not cheesy." Feeling: hopeful and pressured at once. Saying: "¿puedes con 200 para el 14 de diciembre?" Doing: keeping a backup favor option budgeted into every wedding, just in case.
 
-How Tila reaches her: the PV-local angle is everything. Same-city supply, venue delivery possible, 50-300 plant volumes, cultivated with a story her couples will love - "grown right here where you're getting married." Once HSI approves the wording, the cause line is one her couples will repeat in their wedding hashtags, and that is marketing Paola does for us.
+How Tila reaches her: the PV-local angle is everything. Same-city supply, venue delivery possible, 50-300 plant volumes, cultivated with a story her couples will love - "grown right here where you're getting married."
 
 =====================================================================
 AVATAR 4 - PRODUCT AWARE: "Rodrigo, el revendedor de MercadoLibre"

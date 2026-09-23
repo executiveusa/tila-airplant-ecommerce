@@ -1,13 +1,13 @@
-> Standing strategy doc for TL-001. Source: GTM plan (organic-only revision + avatar map) 2026-09-23. All public copy DRAFT until the owner approves; charity wording also needs HSI-approved text. Outreach/pitches are outbound messages and need owner approval. Changes go through stage 06 proposals + owner approval (record in icm/memory/decisions.md).
+> Standing strategy doc for TL-001. Source: GTM plan (organic-only revision + avatar map) 2026-09-23. All public copy DRAFT until the owner approves. Tila is a for-profit business: all cause/NWKids content removed 2026-09-23 14:33. Outreach/pitches are outbound messages and need owner approval. Changes go through stage 06 proposals + owner approval (record in icm/memory/decisions.md).
 
-> **ES-MX - Resumen ejecutivo.** Plan comercial de Tila, fase 1: mayoreo, solo México, crecimiento orgánico con inversión cero (sin anuncios, acuerdo del 23-09-2026). La ventaja son publicaciones completas en Mercado Libre (fotos reales, historia de origen, tablas de tamaños, guía de cuidados, garantía) respaldadas por el sitio de Tila, algo que casi ningún vendedor tiene, más la construcción de reputación (respuestas rápidas, envíos a tiempo, reseñas). Canal B2B: empresas de regalos corporativos y eventos, organizadores de bodas en Puerto Vallarta y Riviera Nayarit, viveros en GDL/CDMX/MTY y hoteles; el orden de acercamiento sigue los 5 perfiles de cliente (`AVATARS.md`). Todo texto público es BORRADOR; cada propuesta o mensaje a clientes requiere aprobación (lado México: Ivette). El texto de causa social requiere aprobación de HSI. Versión completa en inglés a continuación; traducción íntegra pendiente.
+> **ES-MX - Resumen ejecutivo.** Plan comercial de Tila, fase 1: mayoreo, solo México, crecimiento orgánico con inversión cero (sin anuncios, acuerdo del 23-09-2026). La ventaja son publicaciones completas en Mercado Libre (fotos reales, historia de origen, tablas de tamaños, guía de cuidados, garantía) respaldadas por el sitio de Tila, algo que casi ningún vendedor tiene, más la construcción de reputación (respuestas rápidas, envíos a tiempo, reseñas). Canal B2B: empresas de regalos corporativos y eventos, organizadores de bodas en Puerto Vallarta y Riviera Nayarit, viveros en GDL/CDMX/MTY y hoteles; el orden de acercamiento sigue los 5 perfiles de cliente (`AVATARS.md`). Todo texto público es BORRADOR; cada propuesta o mensaje a clientes requiere aprobación (lado México: Ivette). Tila es un negocio con fines de lucro; no hay mensajes de causa social. Versión completa en inglés a continuación; traducción íntegra pendiente.
 
 # TILA / JARDINES INDIGO - GO-TO-MARKET PLAN (phase 1: wholesale, Mexico only, ORGANIC ONLY - zero spend)
 Date: 2026-09-23, revised same day per Bambu's ruling: NO paid ads. Zero-peso start. Well-built MercadoLibre pages are the weapon because most sellers' pages suck and have no website or proof behind them.
 Status: ALL copy DRAFT for Bambu's approval.
 
 ## 0. The one-paragraph version
-Tila sells cultivated Tillandsia bulbosa, grown at Proyecto Indigo Azul in Puerto Vallarta, wholesale-only (50-plant minimum), shipping inside Mexico, with proceeds supporting nwkids.org. Phase 1 = MercadoLibre Mexico with the best-built listing pages in the category + direct B2B pitches to event/corporate-gift companies. No ads, no spend. Phase 2 = US wholesale lots once MX sales prove out.
+Tila sells cultivated Tillandsia bulbosa, grown at Proyecto Indigo Azul in Puerto Vallarta, wholesale-only (50-plant minimum), shipping inside Mexico. Phase 1 = MercadoLibre Mexico with the best-built listing pages in the category + direct B2B pitches to event/corporate-gift companies. No ads, no spend. Phase 2 = US wholesale lots once MX sales prove out.
 
 ## 1. The organic quality play (his thesis, now the center of the plan)
 Most MercadoLibre plant sellers run one blurry photo, two lines of text, no story, no website, no proof. The entire plan is built to win on quality, not on ad spend:
@@ -19,19 +19,14 @@ Most MercadoLibre plant sellers run one blurry photo, two lines of text, no stor
 Phase 2 = US wholesale lots, also organic (direct outreach to US plant shops), once MX proves sales.
 
 ## 2. Positioning + brand story (DRAFT)
-Three pillars, in order:
+Two pillars, in order:
 1. GROWN, NOT WILD: every plant cultivated at Proyecto Indigo Azul, Puerto Vallarta. Single-origin, sustainable, no wild extraction. This is the differentiator vs cheap wild-collected sellers.
 2. NATIVE: bulbosa is a Mexican native species - "planta de aire mexicana" / "clavel del aire." Buying local = fresher plant, no import stress, arrives alive.
-3. WITH CAUSE: proceeds support nwkids.org children's programs. (DRAFT - see gate below.)
 
 Brand voice: warm, simple, proud-of-origin. Name on ML: "Jardines Indigo" matches the existing account email (jardinesindigo@gmail.com); "Tila" is the product/brand line.
 
-## 3. The impact claim - GATE (DRAFT, needs 2 approvals)
-Public "proceeds go to NWKids" text is fundraising-adjacent and falls under the HSI fiscal-sponsorship terms: HSI needs to approve the wording before it goes on any listing or sheet. Nothing publishes with the impact line until (a) Bambu approves and (b) HSI approves wording. Three phrasings to take to HSI (DRAFT):
-- "Tila apoya los programas infantiles de New World Kids (nwkids.org) con parte de sus ganancias."
-- "Cada compra ayuda a financiar los programas de nwkids.org."
-- "Tila es un proyecto con causa: cultivamos plantas, apoyamos ninos. nwkids.org"
-All three use "apoya/parte de" (supports/part of), never "100% of profits" - unless that's literally true and HSI signs off on it.
+## 3. (removed)
+Impact/cause section removed - Tila is a for-profit business (ruling 2026-09-23 14:33).
 
 ## 4. MercadoLibre listing plan (wholesale-only, ships inside MX, zero ads)
 SKUs to publish (all DRAFT, all "lote mayoreo", min 50):
@@ -104,4 +99,4 @@ One-page wholesale sheet (asset #3 below) is the leave-behind.
 ## 9. Proven vs proposed - the split
 PROVEN: demand numbers (Etsy 21k sales, 4k listings; ML MX $245 retail; +28% MX market growth), export legality + $717 cert cost, 50-pack precedent, spring seasonality, ML fee ranges, his ruling: organic only.
 PROPOSED (his approval needed): all copy, the price breaks at 200/500, the mixto SKU, free-shipping threshold, pitch list + pitch text, the 10-lots green-light target.
-TO VERIFY (not blockers): ML policy on linking the Tila site from listings, vivero registration/SEMARNAT paperwork for a cultivation operation (grown = clean lane, registration question stays open), HSI approval of impact wording, whether 42/60/85 is pesos (assumed).
+TO VERIFY (not blockers): ML policy on linking the Tila site from listings, vivero registration/SEMARNAT paperwork for a cultivation operation (grown = clean lane, registration question stays open), whether 42/60/85 is pesos (assumed).

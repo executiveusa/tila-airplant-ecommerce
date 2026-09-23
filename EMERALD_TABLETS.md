@@ -6,7 +6,7 @@ No unmeasured claims in copy, listings, commits or reports. Banned unless quoted
 ## II. Truth in listings
 - Only claim what is proven: "cultivated at Proyecto Indigo Azul" is the owner's statement (2026-09-23). Size grades, counts and survival rates must match what ships.
 - Photos must be of real Tila stock once available; stock/reference photos stay labeled until replaced.
-- Charity wording (New World Kids / nwkids.org) needs owner + HSI approval of the exact text. Until then it is marked pending.
+- Tila is a for-profit business. New World Kids / proceeds claims removed (ruling 2026-09-23 14:33).
 
 ## III. Money and outbound gates
 The agent never spends, refunds, changes prices, publishes listings, or sends buyer messages without the right owner's recorded approval (Mexico side: Ivette; USA side: Bambú; shared: both) (see `icm/_config/automation-policy.yml`).
@@ -25,7 +25,7 @@ The host is small (8 GB / 2 cores). Run browser jobs one at a time. No parallel 
 
 ## ES-MX (resumen de las tablas)
 - **I. Sin exageraciones:** nada de afirmaciones sin medir; en lugar de adjetivos, una cifra, una foto, una fuente o un límite explícito.
-- **II. Verdad en las publicaciones:** solo se afirma lo comprobado ("cultivadas en Proyecto Indigo Azul" es declaración del responsable). Tamaños, cantidades y fotos corresponden a lo que se envía. Los textos de causa social requieren texto aprobado por HSI.
+- **II. Verdad en las publicaciones:** solo se afirma lo comprobado ("cultivadas en Proyecto Indigo Azul" es declaración del responsable). Tamaños, cantidades y fotos corresponden a lo que se envía. Tila es un negocio con fines de lucro: se retiraron las afirmaciones sobre New World Kids.
 - **III. Dinero y salidas:** el agente nunca gasta, reembolsa, cambia precios, publica ni envía mensajes sin aprobación registrada de la persona responsable (México: Ivette; EE. UU.: Bambú).
 - **IV. Una sola responsabilidad:** una etapa, un trabajo.
 - **V. Trabajo observable:** cada acción deja entrada, decisión, fuente, resultado y una línea con fecha en la bitácora.
