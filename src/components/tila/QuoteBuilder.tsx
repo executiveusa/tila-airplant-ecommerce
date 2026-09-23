@@ -1,7 +1,7 @@
 "use client";
 import { useMemo, useState } from "react";
 import Image from "next/image";
-import { SIZES, MIN_ORDER, TIERS, tierIndex, mxn, type SizeKey } from "@/content/pricing";
+import { SIZES, MIN_ORDER, TIERS, tierIndex, nextTier, mxn, type SizeKey } from "@/content/pricing";
 import { COPY, WHATSAPP_NUMBER, type Lang } from "@/content/copy";
 
 const start: Record<SizeKey, number> = { chica: 30, mediana: 20, grande: 0, especial: 0 };
@@ -12,13 +12,15 @@ export default function QuoteBuilder({ lang }: { lang: Lang }) {
   const [copied, setCopied] = useState(false);
   const total = Object.values(q).reduce((a, b) => a + b, 0);
   const ti = tierIndex(total);
-  const subtotal = SIZES.reduce((s, z) => s + q[z.key] * z.prices[ti], 0);
+  const subtotal = SIZES.reduce((s, z) => s + (z.prices ? q[z.key] * z.prices[ti] : 0), 0);
+  const nt = nextTier(total);
+  const barPct = total < MIN_ORDER ? (total / MIN_ORDER) * 100 : nt ? ((total - TIERS[ti].min) / (TIERS[nt.index].min - TIERS[ti].min)) * 100 : 100;
   const ok = total >= MIN_ORDER;
   const tier = TIERS[ti];
 
   const message = useMemo(() => {
     const lines = SIZES.filter((z) => q[z.key] > 0).map(
-      (z) => `- ${c.sizes[z.key].name} (${z.cm}): ${q[z.key]} x ${mxn(z.prices[ti])} = ${mxn(q[z.key] * z.prices[ti])}`
+      (z) => z.prices ? `- ${c.sizes[z.key].name} (${z.cm}): ${q[z.key]} x ${mxn(z.prices[ti])} = ${mxn(q[z.key] * z.prices[ti])}` : `- ${c.sizes[z.key].name}: ${q[z.key]} (${c.quoteOnly})`
     );
     return [c.builder.messageIntro, ...lines, `${c.builder.total}: ${total}`, `${c.builder.subtotal}: ${mxn(subtotal)}`, c.builder.messageOutro].join("\n");
   }, [q, ti, total, subtotal, c]);
@@ -34,7 +36,7 @@ export default function QuoteBuilder({ lang }: { lang: Lang }) {
             <Image src={z.image} alt="" width={64} height={64} className="h-14 w-14 flex-none sm:h-16 sm:w-16 rounded-xl object-cover" />
             <div className="min-w-0 flex-1">
               <p className="font-medium text-ink">{c.sizes[z.key].name}</p>
-              <p className="text-xs text-ink/60 sm:text-sm">{z.cm} · {mxn(z.prices[ti])}</p>
+              <p className="text-xs text-ink/60 sm:text-sm">{z.prices ? `${z.cm} · ${mxn(z.prices[ti])}` : c.quoteOnly}</p>
             </div>
             <div className="flex items-center rounded-full border border-moss/25 bg-white">
               <button type="button" aria-label="-10" onClick={() => set(z.key, q[z.key] - 10)} className="h-11 w-11 rounded-full text-lg text-moss hover:bg-sand">−</button>
@@ -60,9 +62,12 @@ export default function QuoteBuilder({ lang }: { lang: Lang }) {
           <dd className="text-right font-display text-3xl tabular-nums">{mxn(subtotal)}</dd>
         </dl>
         <div className="h-2 overflow-hidden rounded-full bg-cream/20" aria-hidden>
-          <div className="h-full rounded-full bg-clay transition-[width] duration-300" style={{ width: `${Math.min(100, (total / MIN_ORDER) * 100)}%` }} />
+          <div className="h-full rounded-full bg-clay transition-[width] duration-300" style={{ width: `${Math.min(100, barPct)}%` }} />
         </div>
-        <p className={`text-sm ${ok ? "text-cream" : "text-clay-light"}`} role="status">{ok ? c.builder.ok : c.builder.under(MIN_ORDER - total)}</p>
+        <p className={`text-sm ${ok ? "text-cream" : "text-clay-light"}`} role="status">
+          {!ok ? c.builder.under(MIN_ORDER - total) : nt ? `${c.builder.ok} ${c.builder.next(nt.need, mxn(SIZES[0].prices![nt.index]))}` : `${c.builder.ok} ${c.builder.best}`}
+        </p>
+        {q.especial > 0 && <p className="text-xs text-cream/70">{c.builder.specialLine}</p>}
         <p className="text-xs text-cream/60">{c.taxNote}</p>
         <div className="mt-auto flex flex-col gap-2">
           {wa && ok ? (

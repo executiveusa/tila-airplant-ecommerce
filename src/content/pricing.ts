@@ -18,16 +18,23 @@ export const MIN_ORDER = 50;
 export type Size = {
   key: SizeKey;
   cm: string;
-  prices: [number, number, number]; // per plant, by tier
+  prices: [number, number, number] | null; // per plant, by tier; null = quote only
   image: string;
 };
 
 export const SIZES: Size[] = [
   { key: "chica", cm: "5-10 cm", prices: [38, 33, 28], image: "/images/tila/ionantha-par.jpg" },
-  { key: "mediana", cm: "12-20 cm", prices: [75, 65, 55], image: "/images/tila/mediana-streptophylla.jpg" },
+  { key: "mediana", cm: "12-19 cm", prices: [75, 65, 55], image: "/images/tila/mediana-streptophylla.jpg" },
   { key: "grande", cm: "20-35 cm", prices: [140, 120, 100], image: "/images/tila/grande-tectorum.jpg" },
-  { key: "especial", cm: "15-40 cm", prices: [520, 460, 400], image: "/images/tila/especial-xerographica.jpg" },
+  { key: "especial", cm: "Xerographica", prices: null, image: "/images/tila/especial-xerographica.jpg" },
 ];
+
+export function nextTier(total: number): { need: number; index: number } | null {
+  const i = tierIndex(total);
+  if (total < MIN_ORDER) return null;
+  if (i >= TIERS.length - 1) return null;
+  return { need: TIERS[i + 1].min - total, index: i + 1 };
+}
 
 export function tierIndex(total: number): number {
   if (total >= 500) return 2;

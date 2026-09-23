@@ -48,10 +48,11 @@ export default function Site({ lang }: { lang: Lang }) {
                 <a href="#pedido" className="flex h-12 items-center rounded-full bg-moss px-6 font-medium text-cream hover:bg-moss-dark">{c.hero.cta}</a>
                 <a href="#precios" className="flex h-12 items-center rounded-full border border-moss/30 px-6 font-medium text-moss hover:bg-white">{c.hero.cta2}</a>
               </div>
-              <p className="mt-6 text-sm text-ink/60">{c.from} <span className="font-medium text-ink">{mxn(SIZES[0].prices[2])}</span> {c.perPlant}</p>
+              <p className="mt-6 text-sm text-ink/60"><span className="font-medium text-ink">{c.heroPrice(mxn(SIZES[0].prices![0]))}</span></p>
             </div>
             <div className="relative aspect-[4/3] overflow-hidden rounded-[28px] md:aspect-[4/5]">
               <Image src="/images/tila/hero-vivero.jpg" alt={c.hero.photoAlt} fill priority sizes="(min-width: 768px) 50vw, 100vw" className="object-cover" />
+              <span className="absolute left-3 top-3 rounded-full bg-ink/60 px-2.5 py-1 text-[10px] font-medium uppercase tracking-wider text-cream backdrop-blur">{c.refPhoto}</span>
             </div>
           </div>
         </section>
@@ -70,6 +71,7 @@ export default function Site({ lang }: { lang: Lang }) {
               <article key={z.key} className="group overflow-hidden rounded-3xl border border-moss/10 bg-white">
                 <div className="relative aspect-square overflow-hidden">
                   <Image src={z.image} alt={`${c.sizes[z.key].name}: ${c.sizes[z.key].examples}`} fill sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw" className="object-cover transition-transform duration-500 group-hover:scale-[1.03] motion-reduce:transition-none" />
+                  <span className="absolute left-3 top-3 rounded-full bg-ink/60 px-2.5 py-1 text-[10px] font-medium uppercase tracking-wider text-cream backdrop-blur">{c.refPhoto}</span>
                 </div>
                 <div className="p-5">
                   <div className="flex items-baseline justify-between gap-2">
@@ -78,7 +80,11 @@ export default function Site({ lang }: { lang: Lang }) {
                   </div>
                   <p className="mt-1 text-sm italic text-ink/60">{c.sizes[z.key].examples}</p>
                   <p className="mt-3 text-sm text-ink/75">{c.sizes[z.key].use}</p>
-                  <p className="mt-4 text-sm text-ink/60">{c.from} <span className="font-display text-xl text-moss">{mxn(z.prices[2])}</span></p>
+                  {z.prices ? (
+                    <p className="mt-4 text-sm text-ink/60"><span className="font-display text-xl text-moss">{mxn(z.prices[0])}</span> {c.perPlant} · {c.dropsTo(mxn(z.prices[2]))}</p>
+                  ) : (
+                    <p className="mt-4 text-sm text-ink/60"><span className="font-display text-xl text-moss">{c.quoteOnly}</span></p>
+                  )}
                 </div>
               </article>
             ))}
@@ -90,14 +96,18 @@ export default function Site({ lang }: { lang: Lang }) {
             {SIZES.map((z) => (
               <li key={z.key} className="rounded-2xl bg-white p-4">
                 <p className="font-medium text-ink">{c.sizes[z.key].name} <span className="text-sm font-normal text-ink/55">{z.cm}</span></p>
-                <dl className="mt-3 grid grid-cols-3 gap-2 text-center">
-                  {TIERS.map((t, i) => (
-                    <div key={t.min} className="rounded-xl bg-sand/60 px-1 py-2">
-                      <dt className="text-[11px] text-ink/60">{c.priceHead.tier(t.min, t.max)}</dt>
-                      <dd className="mt-0.5 font-display text-lg tabular-nums text-moss">{mxn(z.prices[i])}</dd>
-                    </div>
-                  ))}
-                </dl>
+                {z.prices ? (
+                  <dl className="mt-3 grid grid-cols-3 gap-2 text-center">
+                    {TIERS.map((t, i) => (
+                      <div key={t.min} className="rounded-xl bg-sand/60 px-1 py-2">
+                        <dt className="text-[11px] text-ink/60">{c.priceHead.tier(t.min, t.max)}</dt>
+                        <dd className="mt-0.5 font-display text-lg tabular-nums text-moss">{mxn(z.prices![i])}</dd>
+                      </div>
+                    ))}
+                  </dl>
+                ) : (
+                  <p className="mt-2 text-sm text-ink/70"><span className="font-display text-lg text-moss">{c.quoteOnly}</span> · {c.specialNote}</p>
+                )}
               </li>
             ))}
           </ul>
@@ -113,7 +123,7 @@ export default function Site({ lang }: { lang: Lang }) {
                 {SIZES.map((z) => (
                   <tr key={z.key}>
                     <td className="p-4"><span className="font-medium text-ink">{c.sizes[z.key].name}</span> <span className="text-sm text-ink/55">{z.cm}</span></td>
-                    {z.prices.map((p, i) => <td key={i} className="p-4 text-right tabular-nums text-ink">{mxn(p)}</td>)}
+                    {z.prices ? z.prices.map((p, i) => <td key={i} className="p-4 text-right tabular-nums text-ink">{mxn(p)}</td>) : <td colSpan={3} className="p-4 text-right text-sm text-ink/70"><span className="font-display text-lg text-moss">{c.quoteOnly}</span> · {c.specialNote}</td>}
                   </tr>
                 ))}
               </tbody>
@@ -152,7 +162,7 @@ export default function Site({ lang }: { lang: Lang }) {
               <div className="relative aspect-[4/5] overflow-hidden rounded-[28px]">
                 <Image src="/images/tila/ionantha-rubor.jpg" alt={c.originCaption} fill sizes="(min-width:768px) 50vw, 100vw" className="object-cover" />
               </div>
-              <figcaption className="mt-3 text-xs text-ink/50">{c.originCaption}</figcaption>
+              <figcaption className="mt-3 text-xs text-ink/50">{c.refPhoto} · {c.originCaption}</figcaption>
             </figure>
             <div>
               <h2 className="font-display text-3xl leading-tight text-ink md:text-5xl">{c.originTitle}</h2>
