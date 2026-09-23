@@ -17,6 +17,7 @@ Tila vende **Tillandsia bulbosa** (planta aérea) **al mayoreo** dentro de Méxi
 | Producto | Tillandsia bulbosa en lotes de mayoreo (mínimo 50 plantas) | Confirmado |
 | Origen | Cultivada por nosotros en Proyecto Indigo Azul, Puerto Vallarta, Jalisco. Son plantas cultivadas, no extraídas del monte | Confirmado por Bambú |
 | Tipo de negocio | Con fines de lucro | Confirmado por Bambú |
+| Correo del negocio | jardinesindigo@gmail.com (el mismo de la cuenta de Mercado Libre) para todo Tila: Mercado Libre, Zernio, redes sociales y contacto del sitio | Confirmado por Bambú |
 | Mercado | Solo México en la fase 1 | Plan |
 | Canal principal | Mercado Libre México | Plan |
 | Respaldo de confianza | Sitio web de Tila (español e inglés). Hoy es una versión de prueba, no pública | Borrador |
@@ -150,7 +151,7 @@ Cualquier acercamiento o propuesta a estos clientes es un mensaje saliente y req
 4. Método de envío de respaldo si las paqueterías de Mercado Libre rechazan plantas: Paquetexpress perecederos, entrega local en Puerto Vallarta o mensajería Flex más adelante.
 5. Política de garantía por daños en tránsito (por ejemplo, foto dentro de las 24-48 horas posteriores a la entrega).
 6. Factura / IVA.
-7. Datos de contacto para el sitio (WhatsApp y correo).
+7. WhatsApp de contacto para el sitio (el correo ya está definido: jardinesindigo@gmail.com).
 8. Estatus del registro del vivero ante SEMARNAT.
 9. Qué información de Tila se puede compartir entre los asistentes en cada dirección.
 

@@ -8,3 +8,4 @@
 - Standing approval rule for shared projects: "Everything needs to be approved by her or me or both." (Bambú, WhatsApp 2026-09-13 22:55)
 - 2026-09-23 - Business name is Tila: business = agent = site, one name. (Bambú, WhatsApp 14:31: "now we need to name the business how about Tila")
 - 2026-09-23 - REVERSAL: remove all New World Kids / proceeds / cause logic. Tila is a for-profit business. Supersedes the 13:35 proceeds statement. (Bambú, WhatsApp 14:33: "remove new world kids logic. i need it to be a money businesss")
+- 2026-09-23 - One email for the whole Tila business: jardinesindigo@gmail.com (the MercadoLibre account email) for Zernio, social accounts, site contact, everything. nwkids@mail.instinct.com is New World Kids only. (Bambú, WhatsApp 14:39: "no thats not allowed, use the same one from mercado libre to build the whole business. and the socials . nwkids is only for nwkids")

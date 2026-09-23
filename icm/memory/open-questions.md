@@ -6,7 +6,8 @@
 - [ ] Shipping method if ML carriers refuse plants (see docs/shipping/SHIPPING.md options)
 - [ ] Guarantee policy (e.g., photo within 24-48h of delivery if plants arrive damaged)
 - [ ] Factura / IVA
-- [ ] Contact WhatsApp / email for the site
+- [ ] Contact WhatsApp for the site
+- [x] Business email: jardinesindigo@gmail.com for all of Tila, decided 2026-09-23 - see decisions.md
 - [x] Final brand name: Tila (business = agent = site), decided 2026-09-23 - see decisions.md
 - [ ] Vivero / SEMARNAT registration status for cultivated native plants
 - [ ] Set up the Tila collaboration on the i2i lane with Alex (Ivette's Instinct): what Tila information may be shared both ways (owner decision)

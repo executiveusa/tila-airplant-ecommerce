@@ -23,7 +23,7 @@ Two pillars, in order:
 1. GROWN, NOT WILD: every plant cultivated at Proyecto Indigo Azul, Puerto Vallarta. Single-origin, sustainable, no wild extraction. This is the differentiator vs cheap wild-collected sellers.
 2. NATIVE: bulbosa is a Mexican native species - "planta de aire mexicana" / "clavel del aire." Buying local = fresher plant, no import stress, arrives alive.
 
-Brand voice: warm, simple, proud-of-origin. Name on ML: "Jardines Indigo" matches the existing account email (jardinesindigo@gmail.com); "Tila" is the product/brand line.
+Brand voice: warm, simple, proud-of-origin. Name on ML: "Jardines Indigo" matches the existing account email (jardinesindigo@gmail.com); "Tila" is the product/brand line. jardinesindigo@gmail.com is the one email for the whole Tila business, including Zernio and all social accounts (Bambú 2026-09-23 14:39).
 
 ## 3. (removed)
 Impact/cause section removed - Tila is a for-profit business (ruling 2026-09-23 14:33).

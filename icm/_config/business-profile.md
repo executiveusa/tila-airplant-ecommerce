@@ -13,11 +13,13 @@
 | Marketing | Organic only, no paid ads, zero-spend start | Owner ruling 2026-09-23 13:40 |
 | Draft price ladder | 42 / 60 / 85 MXN per plant (chica / mediana / grande) - NOT confirmed | PRICING-BASIS.md |
 | Draft ML lots | Lote 50 Chica 2,100; Mediana 3,000; Grande 4,250; Mixto 2,900 MXN - DRAFT | GTM plan 2026-09-23 |
+| Business email (all of Tila) | jardinesindigo@gmail.com - the one email for the whole business: MercadoLibre, Zernio, social accounts, site contact, everything | Bambú, WhatsApp 2026-09-23 14:39 |
 | ML seller account | jardinesindigo@gmail.com (password in Infisical, see secrets-map) | Owner handoff |
+| Not for Tila | nwkids@mail.instinct.com is New World Kids only; never used for Tila | Bambú, WhatsApp 2026-09-23 14:39 |
 | Site preview | https://tila.2.25.241.209.sslip.io (draft, noindex) | Deploy 2026-09-23 |
 
 ## Open (owner decides) / Pendientes
-Real size grades, final prices, contact WhatsApp/email, shipping method, factura/IVA, guarantee policy, vivero / SEMARNAT registration status.
+Real size grades, final prices, contact WhatsApp, shipping method, factura/IVA, guarantee policy, vivero / SEMARNAT registration status.
 
 ## ES-MX
-Producto: Tillandsia bulbosa (planta aérea) en lotes de mayoreo. Origen: cultivada por nosotros en Proyecto Indigo Azul, Puerto Vallarta, Jalisco. Mercado: solo México en la fase 1. Canales: Mercado Libre (principal) y el sitio de Tila como respaldo de confianza. Mercadotecnia: solo orgánica, sin anuncios. Precios y lotes: BORRADOR, sin confirmar (42/60/85 MXN por planta; lotes de 50 a 2,100 / 3,000 / 4,250 / 2,900 MXN). Tipo de negocio: con fines de lucro. Pendientes: tamaños reales, precios finales, contacto, método de envío, factura/IVA, garantía y registro del vivero ante SEMARNAT.
+Producto: Tillandsia bulbosa (planta aérea) en lotes de mayoreo. Origen: cultivada por nosotros en Proyecto Indigo Azul, Puerto Vallarta, Jalisco. Mercado: solo México en la fase 1. Canales: Mercado Libre (principal) y el sitio de Tila como respaldo de confianza. Mercadotecnia: solo orgánica, sin anuncios. Precios y lotes: BORRADOR, sin confirmar (42/60/85 MXN por planta; lotes de 50 a 2,100 / 3,000 / 4,250 / 2,900 MXN). Tipo de negocio: con fines de lucro. Correo del negocio: jardinesindigo@gmail.com para todo Tila (Mercado Libre, Zernio, redes sociales, contacto del sitio); nwkids@mail.instinct.com es solo para New World Kids. Pendientes: tamaños reales, precios finales, WhatsApp de contacto, método de envío, factura/IVA, garantía y registro del vivero ante SEMARNAT.
