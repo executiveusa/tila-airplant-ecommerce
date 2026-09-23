@@ -7,7 +7,7 @@
 - [ ] Guarantee policy (e.g., photo within 24-48h of delivery if plants arrive damaged)
 - [ ] Factura / IVA
 - [ ] Contact WhatsApp / email for the site
-- [ ] Final brand name "Tila"
+- [x] Final brand name: Tila (business = agent = site), decided 2026-09-23 - see decisions.md
 - [ ] Vivero / SEMARNAT registration status for cultivated native plants
 - [ ] HSI-approved charity wording
 - [ ] Set up the Tila collaboration on the i2i lane with Alex (Ivette's Instinct): what Tila information may be shared both ways (owner decision)

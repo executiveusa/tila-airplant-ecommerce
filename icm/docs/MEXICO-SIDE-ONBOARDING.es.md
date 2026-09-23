@@ -13,6 +13,7 @@ Tila vende **Tillandsia bulbosa** (planta aérea) **al mayoreo** dentro de Méxi
 
 | Dato | Valor | Estado |
 |---|---|---|
+| Nombre del negocio | **Tila** (negocio, agente y sitio usan el mismo nombre) | Confirmado por Bambú |
 | Producto | Tillandsia bulbosa en lotes de mayoreo (mínimo 50 plantas) | Confirmado |
 | Origen | Cultivada por nosotros en Proyecto Indigo Azul, Puerto Vallarta, Jalisco. Son plantas cultivadas, no extraídas del monte | Confirmado por Bambú |
 | Mercado | Solo México en la fase 1 | Plan |
@@ -150,9 +151,8 @@ Cualquier acercamiento o propuesta a estos clientes es un mensaje saliente y req
 5. Política de garantía por daños en tránsito (por ejemplo, foto dentro de las 24-48 horas posteriores a la entrega).
 6. Factura / IVA.
 7. Datos de contacto para el sitio (WhatsApp y correo).
-8. Nombre final "Tila".
-9. Estatus del registro del vivero ante SEMARNAT.
-10. Qué información de Tila se puede compartir entre los asistentes en cada dirección.
+8. Estatus del registro del vivero ante SEMARNAT.
+9. Qué información de Tila se puede compartir entre los asistentes en cada dirección.
 
 ---
 

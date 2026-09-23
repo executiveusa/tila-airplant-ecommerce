@@ -4,6 +4,7 @@
 
 | Fact | Value | Source |
 |---|---|---|
+| Business name / Nombre del negocio | **Tila** (business = agent = site / negocio = agente = sitio) | Bambú, WhatsApp 2026-09-23 14:31 |
 | Product | Tillandsia bulbosa (air plant), wholesale lots | Owner, WhatsApp 2026-09-23 |
 | Origin | Grown by us at Proyecto Indigo Azul, Puerto Vallarta, Jalisco | Owner, WhatsApp 2026-09-23 13:33 |
 | Market | Mexico only, wholesale first | GTM plan 2026-09-23 |
@@ -16,7 +17,7 @@
 | Site preview | https://tila.2.25.241.209.sslip.io (draft, noindex) | Deploy 2026-09-23 |
 
 ## Open (owner decides) / Pendientes
-Real size grades, final prices, contact WhatsApp/email, shipping method, factura/IVA, guarantee policy, final brand name "Tila", vivero / SEMARNAT registration status.
+Real size grades, final prices, contact WhatsApp/email, shipping method, factura/IVA, guarantee policy, vivero / SEMARNAT registration status.
 
 ## ES-MX
-Producto: Tillandsia bulbosa (planta aérea) en lotes de mayoreo. Origen: cultivada por nosotros en Proyecto Indigo Azul, Puerto Vallarta, Jalisco. Mercado: solo México en la fase 1. Canales: Mercado Libre (principal) y el sitio de Tila como respaldo de confianza. Mercadotecnia: solo orgánica, sin anuncios. Precios y lotes: BORRADOR, sin confirmar (42/60/85 MXN por planta; lotes de 50 a 2,100 / 3,000 / 4,250 / 2,900 MXN). Causa social: el texto público requiere aprobación de HSI. Pendientes: tamaños reales, precios finales, contacto, método de envío, factura/IVA, garantía, nombre final y registro del vivero ante SEMARNAT.
+Producto: Tillandsia bulbosa (planta aérea) en lotes de mayoreo. Origen: cultivada por nosotros en Proyecto Indigo Azul, Puerto Vallarta, Jalisco. Mercado: solo México en la fase 1. Canales: Mercado Libre (principal) y el sitio de Tila como respaldo de confianza. Mercadotecnia: solo orgánica, sin anuncios. Precios y lotes: BORRADOR, sin confirmar (42/60/85 MXN por planta; lotes de 50 a 2,100 / 3,000 / 4,250 / 2,900 MXN). Causa social: el texto público requiere aprobación de HSI. Pendientes: tamaños reales, precios finales, contacto, método de envío, factura/IVA, garantía y registro del vivero ante SEMARNAT.
