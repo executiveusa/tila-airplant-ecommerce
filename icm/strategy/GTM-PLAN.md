@@ -1,4 +1,4 @@
-> Standing strategy doc for TL-001. Source: GTM plan (organic-only revision) 2026-09-23. All public copy DRAFT until the owner approves; charity wording also needs HSI-approved text. Changes to this plan go through stage 06 proposals + owner approval (record in icm/memory/decisions.md).
+> Standing strategy doc for TL-001. Source: GTM plan (organic-only revision + avatar map) 2026-09-23. All public copy DRAFT until the owner approves; charity wording also needs HSI-approved text. Outreach/pitches are outbound messages and need owner approval. Changes go through stage 06 proposals + owner approval (record in icm/memory/decisions.md).
 
 # TILA / JARDINES INDIGO - GO-TO-MARKET PLAN (phase 1: wholesale, Mexico only, ORGANIC ONLY - zero spend)
 Date: 2026-09-23, revised same day per Bambu's ruling: NO paid ads. Zero-peso start. Well-built MercadoLibre pages are the weapon because most sellers' pages suck and have no website or proof behind them.
@@ -70,6 +70,16 @@ Who to pitch (first 10, then 50):
 - Wedding planners in PV / Riviera Nayarit / Guadalajara / CDMX (destination weddings = PV advantage, local supply)
 - Viveros and florists in GDL/CDMX/MTY that don't grow their own tillandsias
 - Hotels/event venues in PV doing welcome amenities
+
+Avatar map (5 Schwartz stages of buyer awareness - full 5-avatar doc is the companion file avatars.md):
+The five Schwartz stages map onto our pitch targets and change HOW we pitch each:
+- UNAWARE = "Marcela" (traditional vivero owner, GDL): doesn't know the category exists. Reach via vivero pitch only - never ads. Lead: "a product your competitors don't carry, cultivated in MX, min 50, arrives alive guaranteed."
+- PROBLEM AWARE = "Diego" (corporate gifting owner, CDMX): feels the eco-gift sameness pain daily, doesn't know tillandsia wholesale exists. PRIMARY PITCH TARGET. Lead with the story he can resell upstream + wholesale sheet with real photos.
+- SOLUTION AWARE = "Paola" (PV destination wedding planner): already knows air plants are the perfect favor, assumes they're import-only. Lead with the PV-local kill shot: grown in her city, venue delivery, 50-300 volumes, date guaranteed in writing.
+- PRODUCT AWARE = "Rodrigo" (ML reseller): has seen the listings, does margin math, fears dead-plant claims. He finds US - the listing page IS his pitch: visible retail comp ($245), live-arrival guarantee, demand signals. The Mixto lot is his test pack before he scales to 200+.
+- MOST AWARE = "Lucia" (event studio owner, MTY, repeat buyer): needs no convincing, needs loyalty mechanics. Hold her price, first access to cumulos/new stock, priority in Dec-Feb, one-message reorder, referral loop.
+Pitch-order implication: Diego-type gift companies and Paola-type PV planners are weeks 2-4 (they feel pain and we answer it directly); viveros (Marcela) need the personal touch, weeks 3-6; Rodrigos come to us through the page itself; Lucias are retained, not pitched.
+
 The pitch (DRAFT, WhatsApp/email, Spanish):
 "Hola - somos Jardines Indigo, cultivamos tillandsias bulbosa en Puerto Vallarta (Proyecto Indigo Azul). Vendemos al mayoreo, minimo 50 plantas, envio a todo Mexico: chica $42, mediana $60, grande $85, con descuentos desde 200 piezas. Plantas cultivadas (no recolectadas), llegan vivas y listas para recuerdos y eventos. Te mando la hoja de mayoreo con fotos?"
 One-page wholesale sheet (asset #3 below) is the leave-behind.
