@@ -6,7 +6,7 @@ Tila sells cultivated **Tillandsia bulbosa** air plants grown at Proyecto Indigo
 
 **Baseline:** Mexico first, minimum 50 plants, organic marketing only, no paid ads. Ivette leads Mexico; Bambú leads the US side. US expansion is a proposed, controlled wholesale pilot, not authorization to ship, spend or contact buyers. Other countries remain research-only until separately cleared.
 
-**Legal status:** this README does not clear any shipment. The agency process is grounded below, but the exact Mexico-grown bulbosa commodity determination, current Mexican environmental status, nursery registration, importer, port, carrier and landed costs remain open. Obtain written agency/broker confirmation before accepting cross-border orders. This is operating research, not a legal opinion or an exhaustive review of every applicable law.
+**Legal status:** this README does not clear any shipment. The agency process is grounded below, but an issued permit, documented compliance with the retrieved ACIR conditions, current Mexican environmental status, nursery registration, importer, port, carrier and landed costs remain open. Obtain written agency/broker confirmation before accepting cross-border orders. This is operating research, not a legal opinion or an exhaustive review of every applicable law.
 
 ## 1. Current plan versus stale notes
 
@@ -76,7 +76,11 @@ Have SEMARNAT/qualified counsel determine UMA/PIMVS registration and wildlife/fo
 
 The importer checks **APHIS ACIR** for the exact taxon, Mexico origin, product form and destination, then obtains applicable **PPQ 587** conditions via eFile. APHIS says only US residents may apply; the owners' residency/importer authority has not been verified. Use a qualifying importer rather than assume eligibility. A 50-plant wholesale lot is not the 12-or-fewer exemption, and even exempt lots can have certificate/restriction requirements. [S1-S3]
 
-**No definitive current ACIR commodity record or issued permit for this Tila route was obtained in this review.** Confirm NAPPRA/prohibitions, additional declarations, treatment, quarantine, destination rules and port routing from the actual determination. Save the result/permit version. No unrestricted-import claim is made.
+**Current ACIR record retrieved:** "Admissible Herbaceous Plants for Planting, Genus Tillandsia, from PCN Countries", published 2024-11-19, returned by the Mexico + Tillandsia search and read in full on 2026-09-30. It excludes the three CITES taxa discussed below, requires a PPQ 587 permit and entry through a plant inspection station **excluding Hawaii**. It requires a phytosanitary certificate issued **not more than 15 days before shipment**, inspection, matching documents, species/container labeling and an arrival notification. [S3]
+
+For plants other than seeds/unrooted cuttings from a PCN-regulated origin, the certificate must include one of two additional declarations: **(a)** the growing land/substrate was microscopically inspected by the origin country's NPPO within 12 months before certificate issuance and found free of Globodera rostochiensis and G. pallida, **or (b)** secure PCN-free production in soilless medium/in vitro, never grown in or in contact with soil. SENASICA must be able to certify the actual Tila production history; an epiphytic habit alone is not proof. Ask the certifier how to document the applicable declaration for this nursery before accepting an export order.
+
+The record also sets plant-part-specific size limits, approved fresh packing/media conditions and cargo versus courier labeling. Check actual whole-plant dimensions against the record; do not apply cutting/root-clump limits to whole plants. For courier/mail it specifies a color green/yellow inspection-station label, the station as the only exterior destination address, with permittee/contact details inside. **No permit has been issued and compliance of Tila's actual stock/production with these conditions is not established.** Confirm the permit, destination rules and any additional current conditions before dispatch. No unrestricted-import claim is made.
 
 ### Mexico export certification
 
@@ -128,7 +132,7 @@ Agency times are not guaranteed. APHIS warns permit processing can take up to tw
 |---|---|---|---|
 | Days 1-14 | Inventory/grades, provenance, nursery/environmental classification, pack weight, current marketplace/carrier checks, site approval | Written holds or cleared gaps, real freight inputs, approved copy | Ivette; shared brand with Bambú |
 | Days 15-30 | Approved Mexico listings/local B2B, packing trials, delivery/claims tracking | Actual delivered cost and quality | Ivette |
-| Days 15-60 parallel | US importer, ACIR/permit, station/broker, tax/certificate/freight quotes | Named importer, written conditions/costs/responsibilities | Bambú + Mexico exporter |
+| Days 15-60 parallel | US importer, ACIR compliance/permit, station/broker, tax/certificate/freight quotes | Named importer, written conditions/costs/responsibilities | Bambú + Mexico exporter |
 | Days 31-75 only if cleared | One consolidated US wholesale pilot | Certificate, customs release, actual costs, survival/buyer feedback | Both |
 | Days 76-90 or later | Compare margin/reorders; scale or hold | Owner-approved decision and revised SOP/cost model | Both |
 
@@ -178,7 +182,7 @@ Pese/mida el lote de 50, pruebe empaque seco y obtenga aceptación escrita del t
 ## México -> Estados Unidos
 
 1. **Origen e identidad:** expediente por lote de Tillandsia bulbosa, cultivo mexicano, cantidad/destino, documentos de plantas madre, propagación y vivero. Poseer el terreno no prueba origen legal. SEMARNAT/asesoría competente debe determinar UMA/PIMVS, controles forestales/vida silvestre y NOM-059 vigente/sinónimos. **La situación específica NOM-059 y del vivero sigue pendiente.** [S7-S9]
-2. **Admisibilidad:** consulte ACIR por especie, México, forma y destino. Importador obtiene PPQ 587/condiciones cuando corresponda. APHIS indica que solo residentes estadounidenses pueden solicitarlo; no se ha verificado esa condición para los responsables. Un lote de 50 no es la excepción de 12 o menos. **No se obtuvo aquí un registro definitivo ACIR o permiso emitido para Tila.** Revise prohibiciones, NAPPRA, declaraciones, tratamiento, cuarentena y reglas del destino. [S1-S3]
+2. **Admisibilidad:** consulte ACIR por especie, México, forma y destino. Importador obtiene PPQ 587/condiciones cuando corresponda. APHIS indica que solo residentes estadounidenses pueden solicitarlo; no se ha verificado esa condición para los responsables. Un lote de 50 no es la excepción de 12 o menos. **Se obtuvo y leyó el registro ACIR vigente** "Admissible Herbaceous Plants for Planting, Genus Tillandsia, from PCN Countries", publicado el 19-11-2024 y devuelto por la consulta México + Tillandsia. Exige PPQ 587, entrada por estación de inspección excepto Hawái, certificado emitido no más de **15 días antes del embarque**, inspección, notificación y documentos/etiquetas coincidentes. Para origen regulado por nematodos del quiste de papa exige declaración adicional: terreno/sustrato inspeccionado microscópicamente por la autoridad del origen dentro de 12 meses y libre de Globodera rostochiensis/G. pallida, **o** producción segura en área libre de esos nematodos, sin suelo/in vitro y sin contacto previo con suelo. SENASICA debe acreditar la historia real del cultivo; ser epífita no basta. Revise límites por parte vegetal, empaque autorizado y etiquetas según transporte; en correo/exprés la estación es la única dirección exterior. **No existe permiso emitido ni cumplimiento acreditado de las existencias de Tila.** Confirme permiso, reglas del destino y condiciones adicionales. [S1-S3]
 3. **Certificado mexicano:** presente condiciones estadounidenses a SENASICA para verificación, inspección y Certificado Fitosanitario Internacional. Confirme si aplica también SEMARNAT. APHIS no emite el certificado mexicano. Consulte derechos actuales, validez, declaraciones y original/ePhyto. [S4,S8]
 4. **Inspección/aduana:** siga permiso y etiqueta verde/amarilla PPQ 508 si corresponde a paquetería/correo; coordine estación APHIS, agente aduanal y flete posterior. APHIS revisa y libera o retiene. [S1,S5]
 5. **Fiscal:** contador/agente confirma clasificación, pedimento/exportador/RFC, CFDI/Complemento Comercio Exterior aplicables, entrada/importador/garantías e impuestos. SAT describe CFDI 4.0 con Comercio Exterior 2.0. T-MEC exige origen calificable; no elimina fitosanidad ni todas las cuotas. No se fija una tasa sin clasificación actual. [S10-S11]
@@ -211,7 +215,7 @@ Official sources accessed 2026-09-30, except the 2019 amendment reference which 
 
 - **S1** APHIS online importing: https://www.aphis.usda.gov/plant-imports/buy-plants-seeds-online
 - **S2** APHIS restrictions: https://www.aphis.usda.gov/plant-imports/buy-plants-seeds-online/plants-special-requirements
-- **S3** ACIR: https://acir.aphis.usda.gov/s/ (specific record pending).
+- **S3** ACIR current Tillandsia/PCN requirement record, returned for Mexico, read in full: https://acir.aphis.usda.gov/s/acir-document-detail?rowId=a0jSJ000004B36mYAC&Document_Type=Commodity%20Import%20Requirements
 - **S4** SENASICA export certificate: https://www.gob.mx/senasica/acciones-y-programas/certificado-fitosanitario-internacional-164333
 - **S5** APHIS inspection stations: https://www.aphis.usda.gov/plant-imports/how-to-import/plant-inspection-stations
 - **S6** CITES full current appendices: https://cites.org/eng/app/appendices.php
@@ -219,12 +223,13 @@ Official sources accessed 2026-09-30, except the 2019 amendment reference which 
 - **S8** SEMARNAT trade framework, 2020 text, not a current tariff determination: https://www.dof.gob.mx/nota_detalle.php?codigo=5608831&fecha=26/12/2020
 - **S9** SEMARNAT registration: https://www.gob.mx/public/tramites/detalleTramite.xhtml?homoclave=SEMARNAT-08-045-B
 - **S10** SAT foreign-trade invoice: https://wwwmat.sat.gob.mx/consultas/61165/comprobante-de-comercio-exterior
-- **S11** CBP USMCA origin: https://www.cbp.gov/document/fact-sheets/usmca-fact-sheet-origin-certification
+- **S11** CBP USMCA origin: https://www.cbp.gov/document/fact-sheets/usmca-fact-sheet-origin-certification ; qualifying origin and certification FAQ: https://www.cbp.gov/trade/priority-issues/trade-agreements/free-trade-agreements/USMCA/FAQs
 - **S12** SENASICA MCRFI: https://sistemasssl.senasica.gob.mx/mcrfi/
 - **S13** APHIS exporter responsibilities: https://www.aphis.usda.gov/plant-export/responsibilities
 - **S14** APHIS export/reexport certificates: https://www.aphis.usda.gov/plant-exports/certification
 - **S15** SENASICA commercial imports: https://www.gob.mx/senasica/acciones-y-programas/importacion-comercial
 - **S16** VUCEM import certification: https://www.ventanillaunica.gob.mx/vucem/Ayuda/SAGARPA/CerSolReq/CISPIFis/cfi.html
 - **S17** EPPO botanical identity: https://gd.eppo.int/taxon/TLDBB
+- **S18** APHIS wood-packing/ISPM-15: https://www.aphis.usda.gov/plant-imports/wood-packaging-material/import
 
 Ownership, cultivation statement, MOQ and no-ad rule come from owner instructions and existing project records. Commercial priorities, prospect counts and timing are proposals. No blanket species clearance or exhaustive legal approval is claimed.
