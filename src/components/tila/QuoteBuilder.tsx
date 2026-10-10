@@ -6,7 +6,7 @@ import { useRate, unit as unitR, fmt, num, code } from "./rate";
 import { RateNote } from "./Money";
 import { COPY, WHATSAPP_NUMBER, type Lang } from "@/content/copy";
 
-const start: Record<SizeKey, number> = { chica: 30, mediana: 20, grande: 0, especial: 0 };
+const start: Record<SizeKey, number> = { chica: 0, mediana: 0, grande: 0, especial: 0 };
 
 export default function QuoteBuilder({ lang }: { lang: Lang }) {
   const c = COPY[lang];
