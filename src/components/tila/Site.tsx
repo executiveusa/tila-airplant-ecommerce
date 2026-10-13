@@ -256,7 +256,7 @@ export default function Site({ lang }: { lang: Lang }) {
         <div className="mx-auto max-w-6xl">
           <p className="font-display text-6xl font-bold tracking-[-0.05em] text-hueso">tila<span className="text-bractea">.</span></p>
           <p className="mt-3">{c.footer.tagline}</p>
-          <p className="mt-1 text-sm text-hueso/55">{c.footer.contact}</p>
+          <p className="mt-1 text-sm text-hueso/75"><a href="mailto:info@plantastila.com" className="underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-hueso">info@plantastila.com</a></p>
           {CREDITS.length > 0 && (
             <details className="mt-8 text-xs text-hueso/50">
               <summary className="cursor-pointer">{c.footer.credits}</summary>
