@@ -94,3 +94,23 @@ html { scroll-behavior: smooth; -webkit-tap-highlight-color: transparent; }
 .leaf-sm { border-radius: 1.25rem 0.25rem 1.25rem 0.25rem; }
 details > summary::-webkit-details-marker { display: none; }
 @keyframes tila-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* Keep keyboard targets visible above the mobile order dock. */
+*:focus-visible { outline: 3px solid #edb6a9; outline-offset: 3px; }
+@media (max-width: 767px) {
+  html { scroll-padding-bottom: calc(6rem + env(safe-area-inset-bottom)); }
+  body { padding-bottom: calc(5.5rem + env(safe-area-inset-bottom)); }
+  button, a, input, summary { scroll-margin-bottom: calc(6rem + env(safe-area-inset-bottom)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal-armed [data-reveal] { opacity: 1; transform: none; transition: none; }
+}
+
+/* Owner-requested additive wordmark intro. Existing brand tokens remain unchanged. */
+.tila-entry{position:fixed;inset:0;z-index:100;display:grid;place-items:center;background:#0E1A11;pointer-events:none;animation:tila-entry-out .3s ease .96s forwards}
+.tila-entry-mark{font-size:clamp(3rem,12vw,7rem);font-weight:700;color:#EEE9DA;letter-spacing:-.04em;overflow:hidden}
+.tila-entry-letters{display:inline-block;animation:tila-wordmark-wipe .8s cubic-bezier(.2,.7,.2,1) both}
+.tila-entry-dot{color:#E4472F}
+@keyframes tila-wordmark-wipe{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes tila-entry-out{to{opacity:0}}
+@media(prefers-reduced-motion:reduce){.tila-entry{display:none}}

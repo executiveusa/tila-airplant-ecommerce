@@ -1,10 +1,15 @@
+import { LAUNCH_READY } from "@/content/launch";
 import Image from "next/image";
+import EntryIntro from "./EntryIntro";
+import MediaProof from "./MediaProof";
 import Link from "next/link";
 import QuoteBuilder from "./QuoteBuilder";
 import { RevealObserver, SmartHeader, MobileOrderBar } from "./Motion";
 import { COPY, type Lang } from "@/content/copy";
 import { SIZES, TIERS, CREDITS } from "@/content/pricing";
 import { Money, RateNote } from "./Money";
+import MobileMenu from "./MobileMenu";
+import SizeCarousel from "./SizeCarousel";
 
 // Put a React node into a copy template that expects a string.
 const tpl = (fn: (p: string) => string, node: React.ReactNode) => { const [a, b] = fn("\u0000").split("\u0000"); return <>{a}{node}{b}</>; };
@@ -32,36 +37,38 @@ function Head({ eyebrow, title, sub, light = false }: { eyebrow?: string; title:
 
 export default function Site({ lang }: { lang: Lang }) {
   const c = COPY[lang];
-  const who = ["bg-flor", "bg-bractea", "bg-brote text-selva", "bg-selva-3"];
   return (
     <>
+      <EntryIntro />
       <RevealObserver />
-      <div className="relative z-50 bg-bractea px-4 py-1.5 text-center text-[11px] font-semibold uppercase tracking-[0.14em] text-white">{c.draftBanner}</div>
+      {!LAUNCH_READY && (<div className="relative z-50 bg-bractea px-4 py-1.5 text-center text-[11px] font-semibold uppercase tracking-[0.14em] text-white">{c.draftBanner}</div>)}
 
       <SmartHeader>
         <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:px-8">
-          <Link href={lang === "es" ? "/" : "/en"} className="font-display text-[1.7rem] font-bold tracking-[-0.04em] text-hueso">tila<span className="text-bractea">.</span></Link>
+          <Link href={lang === "es" ? "/" : "/en"} className="flex shrink-0 min-h-11 min-w-11 items-center font-display text-[1.7rem] font-bold tracking-[-0.04em] text-hueso">tila<span className="text-bractea">.</span></Link>
           <ul className="hidden items-center gap-8 text-sm text-hueso/75 md:flex">
             <li><a href="#tallas" className="transition-colors hover:text-hueso">{c.nav.sizes}</a></li>
             <li><a href="#precios" className="transition-colors hover:text-hueso">{c.nav.prices}</a></li>
             <li><a href="#como" className="transition-colors hover:text-hueso">{c.nav.how}</a></li>
             <li><a href="#faq" className="transition-colors hover:text-hueso">{c.nav.faq}</a></li>
           </ul>
-          <div className="flex items-center gap-2">
+          <div className="flex shrink-0 items-center gap-2">
+            <MobileMenu lang={lang} />
             <Link href={c.nav.otherHref} className="flex h-11 min-w-11 items-center justify-center rounded-full border border-hueso/20 px-3 text-xs font-semibold text-hueso active:scale-95">{c.nav.other}</Link>
-            <a href="#pedido" className="flex h-11 items-center rounded-full bg-bractea px-5 text-sm font-semibold text-white transition-colors hover:bg-bractea-dark active:scale-95">{c.nav.cta}</a>
+            <a href="#pedido" className="flex h-11 items-center rounded-full bg-bractea px-3 text-sm sm:px-5 font-semibold text-white transition-colors hover:bg-bractea-dark active:scale-95">{c.nav.cta}</a>
           </div>
         </nav>
+        <noscript><nav className="flex flex-wrap gap-4 bg-selva px-5 py-3 text-sm text-hueso md:hidden"><a href="#tallas">{c.nav.sizes}</a><a href="#precios">{c.nav.prices}</a><a href="#como">{c.nav.how}</a><a href="#faq">{c.nav.faq}</a></nav></noscript>
       </SmartHeader>
 
       <main className="-mt-16">
         {/* Hero: full-bleed plant, headline sits in the foliage */}
-        <section className="relative isolate min-h-[92svh] overflow-hidden md:min-h-[88vh]">
+        <section className="relative isolate min-h-[78svh] overflow-hidden md:min-h-[88vh]">
           <Image src="/images/tila/bulbosa-mediana.jpg" alt={c.hero.photoAlt} fill priority sizes="100vw" className="-z-10 object-cover object-[50%_30%] md:object-[70%_40%]" />
           <div className="absolute inset-0 -z-10 bg-gradient-to-t from-selva via-selva/55 to-selva/10 md:bg-gradient-to-r md:from-selva md:via-selva/70 md:to-transparent" />
-          <div className="mx-auto flex min-h-[92svh] max-w-6xl flex-col justify-end px-5 pb-10 pt-28 sm:px-8 md:min-h-[88vh] md:justify-center md:pb-16">
+          <div className="mx-auto flex min-h-[78svh] max-w-6xl flex-col justify-end px-5 pb-10 pt-24 sm:px-8 md:min-h-[88vh] md:justify-center md:pb-16">
             <p data-reveal className="text-xs font-semibold uppercase tracking-[0.2em] text-bractea-soft">{c.hero.eyebrow}</p>
-            <h1 data-reveal style={{ ["--d" as string]: "80ms", fontVariationSettings: '"wdth" 82' }} className="mt-4 max-w-2xl font-display text-[3.1rem] font-bold leading-[0.92] tracking-[-0.035em] text-hueso sm:text-7xl md:text-8xl">{c.hero.title}</h1>
+            <h1 data-reveal style={{ ["--d" as string]: "80ms", fontVariationSettings: '"wdth" 82' }} className="mt-4 max-w-2xl font-display text-[2.55rem] font-semibold leading-[1.08] tracking-[-0.025em] text-hueso sm:text-6xl md:text-[4.75rem]">{c.hero.title}</h1>
             <p data-reveal style={{ ["--d" as string]: "160ms" }} className="mt-5 max-w-md text-lg text-hueso/80">{c.hero.sub}</p>
             <div data-reveal style={{ ["--d" as string]: "240ms" }} className="mt-8 flex flex-wrap gap-3">
               <a href="#pedido" className="flex h-14 items-center rounded-full bg-bractea px-7 font-semibold text-white transition-colors hover:bg-bractea-dark active:scale-[0.97]">{c.hero.cta}</a>
@@ -83,12 +90,13 @@ export default function Site({ lang }: { lang: Lang }) {
         {/* Sizes: swipe on phones, grid on desktop */}
         <section id="tallas" className="scroll-mt-16 py-16 md:py-28">
           <div className="mx-auto max-w-6xl px-5 sm:px-8"><Head eyebrow={c.nav.sizes} title={c.sizesTitle} sub={c.sizesSub} /></div>
-          <div className="no-scrollbar mt-10 flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-px-5 px-5 pb-2 sm:px-8 lg:mx-auto lg:grid lg:max-w-6xl lg:grid-cols-4 lg:overflow-visible">
+          <SizeCarousel lang={lang}>
             {SIZES.map((z, i) => (
               <article key={z.key} data-reveal style={{ ["--d" as string]: `${i * 70}ms` }} className="group w-[78%] flex-none snap-start sm:w-[46%] lg:w-auto">
-                <div className="leaf relative aspect-[4/5] overflow-hidden bg-selva-2">
-                  <Image src={z.image} alt={`${c.sizes[z.key].name}: ${c.sizes[z.key].examples}`} fill sizes="(min-width:1024px) 25vw, 78vw" className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04] motion-reduce:transition-none" />
+                <div className="leaf relative aspect-[4/5] overflow-hidden border border-hueso/10 bg-[#24362b] p-3">
+                  <Image src={z.image} alt={`${c.sizes[z.key].name}: ${c.sizes[z.key].examples}`} fill sizes="(min-width:1024px) 25vw, 78vw" className="object-contain p-3" />
                   <span className="absolute bottom-3 left-3 rounded-full bg-selva/70 px-3 py-1 text-xs font-medium text-hueso backdrop-blur">{z.cm || c.quoteOnly}</span>
+                  <span className="absolute right-3 top-3 rounded-full bg-selva/80 px-3 py-1 text-xs text-hueso">{c.refPhoto}</span>
                 </div>
                 <div className="pt-4">
                   <h3 className="font-display text-3xl font-semibold tracking-[-0.02em] text-hueso">{c.sizes[z.key].name}</h3>
@@ -103,7 +111,7 @@ export default function Site({ lang }: { lang: Lang }) {
               </article>
             ))}
             <span className="w-1 flex-none lg:hidden" aria-hidden />
-          </div>
+          </SizeCarousel>
         </section>
 
         {/* Prices */}
@@ -175,9 +183,9 @@ export default function Site({ lang }: { lang: Lang }) {
             <Head eyebrow={c.nav.who} title={c.whoTitle} />
             <ul className="mt-10 grid gap-3 sm:grid-cols-2">
               {c.who.map((w, i) => (
-                <li key={w.t} data-reveal style={{ ["--d" as string]: `${i * 70}ms` }} className={`leaf p-7 md:p-9 ${who[i % who.length]} ${i === 2 ? "" : "text-hueso"}`}>
+                <li key={w.t} data-reveal style={{ ["--d" as string]: `${i * 70}ms` }} className="leaf border border-hueso/15 bg-selva-2 p-7 text-hueso md:p-9">
                   <h3 className="font-display text-3xl font-semibold leading-tight tracking-[-0.02em]">{w.t}</h3>
-                  <p className="mt-2 opacity-80">{w.d}</p>
+                  <p className="mt-2 text-hueso/75">{w.d}</p>
                 </li>
               ))}
             </ul>
@@ -202,6 +210,7 @@ export default function Site({ lang }: { lang: Lang }) {
         </section>
 
         {/* Order builder: the one light surface, so the working area reads as paper */}
+        <MediaProof lang={lang} />
         <section id="pedido" className="scroll-mt-16 bg-hueso px-5 py-16 text-selva sm:px-8 md:py-28">
           <div className="mx-auto max-w-6xl">
             <Head eyebrow={c.nav.cta} title={c.builderTitle} sub={c.builderSub} light />
@@ -247,7 +256,7 @@ export default function Site({ lang }: { lang: Lang }) {
         <div className="mx-auto max-w-6xl">
           <p className="font-display text-6xl font-bold tracking-[-0.05em] text-hueso">tila<span className="text-bractea">.</span></p>
           <p className="mt-3">{c.footer.tagline}</p>
-          <p className="mt-1 text-sm text-hueso/55">{c.footer.contact}</p>
+          <p className="mt-1 text-sm text-hueso/75"><a href="mailto:info@plantastila.com" className="underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-hueso">info@plantastila.com</a></p>
           {CREDITS.length > 0 && (
             <details className="mt-8 text-xs text-hueso/50">
               <summary className="cursor-pointer">{c.footer.credits}</summary>

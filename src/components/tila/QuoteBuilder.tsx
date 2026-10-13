@@ -4,7 +4,8 @@ import Image from "next/image";
 import { SIZES, MIN_ORDER, TIERS, tierIndex, nextTier, type SizeKey } from "@/content/pricing";
 import { useRate, unit as unitR, fmt, num, code } from "./rate";
 import { RateNote } from "./Money";
-import { COPY, WHATSAPP_NUMBER, type Lang } from "@/content/copy";
+import { COPY, type Lang } from "@/content/copy";
+import { CONTACT, CONTACT_COPY_APPROVED, CONTACT_PROPOSAL, contactLinks } from "@/content/contact";
 
 const start: Record<SizeKey, number> = { chica: 0, mediana: 0, grande: 0, especial: 0 };
 
@@ -31,28 +32,33 @@ export default function QuoteBuilder({ lang }: { lang: Lang }) {
   }, [q, ti, total, subtotal, c, lang, rate]);
 
   const set = (k: SizeKey, v: number) => setQ((p) => ({ ...p, [k]: Math.max(0, Math.min(5000, Math.round(v) || 0)) }));
-  const wa = WHATSAPP_NUMBER ? `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}` : "";
+  const candidateLinks = contactLinks(CONTACT, message);
+  const links: ReturnType<typeof contactLinks> = {
+    whatsapp: null, // Owner asked to hide WhatsApp until the business number is ready.
+    email: CONTACT_COPY_APPROVED ? candidateLinks.email : null,
+  };
+  const routeReady = !!(links.whatsapp || links.email);
 
   return (
-    <div className="grid gap-6 lg:grid-cols-[1.3fr_1fr]">
+    <div className="grid grid-cols-[minmax(0,1fr)] gap-6 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)]">
       <ul className="divide-y divide-selva/15 rounded-2xl border border-selva/15 bg-white/70">
         {SIZES.map((z) => (
-          <li key={z.key} className="flex items-center gap-3 p-3 sm:gap-4 sm:p-4">
+          <li key={z.key} className="flex flex-wrap items-center gap-3 p-3 max-[359px]:grid max-[359px]:grid-cols-[56px_minmax(0,1fr)] sm:flex-nowrap sm:gap-4 sm:p-4">
             <Image src={z.image} alt="" width={64} height={64} className="h-14 w-14 flex-none sm:h-16 sm:w-16 rounded-xl object-cover" />
             <div className="min-w-0 flex-1">
               <p className="font-medium text-ink">{c.sizes[z.key].name}</p>
               <p className="text-xs text-ink/60 sm:text-sm">{z.prices ? `${z.cm} · ${money(z.prices[ti], lang)}` : c.quoteOnly}</p>
             </div>
-            <div className="flex items-center rounded-full border border-selva/25 bg-white">
-              <button type="button" aria-label="-10" onClick={() => set(z.key, q[z.key] - 10)} className="h-11 w-11 rounded-full text-lg text-selva hover:bg-hueso">−</button>
+            <div className="ml-auto flex flex-none items-center max-[359px]:col-span-2 rounded-full border border-selva/25 bg-white">
+              <button type="button" aria-label="-10" onClick={() => set(z.key, q[z.key] - 10)} className="h-[46px] w-[46px] rounded-full text-sm font-semibold text-selva hover:bg-hueso">−10</button>
               <input
                 aria-label={`${c.builder.qty} ${c.sizes[z.key].name}`}
                 inputMode="numeric"
                 value={q[z.key]}
                 onChange={(e) => set(z.key, Number(e.target.value.replace(/\D/g, "")))}
-                className="w-12 bg-transparent text-center font-medium tabular-nums text-ink outline-none"
+                className="h-[46px] w-12 bg-transparent text-center font-medium tabular-nums text-ink outline-none"
               />
-              <button type="button" aria-label="+10" onClick={() => set(z.key, q[z.key] + 10)} className="h-11 w-11 rounded-full text-lg text-selva hover:bg-hueso">+</button>
+              <button type="button" aria-label="+10" onClick={() => set(z.key, q[z.key] + 10)} className="h-[46px] w-[46px] rounded-full text-sm font-semibold text-selva hover:bg-hueso">+10</button>
             </div>
           </li>
         ))}
@@ -70,16 +76,12 @@ export default function QuoteBuilder({ lang }: { lang: Lang }) {
           <div className="h-full rounded-full bg-bractea transition-[width] duration-300" style={{ width: `${Math.min(100, barPct)}%` }} />
         </div>
         <p className={`text-sm ${ok ? "text-hueso" : "text-bractea-soft"}`} role="status">
-          {!ok ? c.builder.under(MIN_ORDER - total) : nt ? `${c.builder.ok} ${c.builder.next(nt.need, money(SIZES[0].prices![nt.index], lang))}` : `${c.builder.ok} ${c.builder.best}`}
+          {!ok ? c.builder.under(MIN_ORDER - total) : routeReady ? (nt ? `${c.builder.ok} ${c.builder.next(nt.need, money(SIZES[0].prices![nt.index], lang))}` : `${c.builder.ok} ${c.builder.best}`) : c.builder.pending}
         </p>
         {q.especial > 0 && <p className="text-xs text-hueso/70">{c.builder.specialLine}</p>}
         <p className="text-xs text-hueso/60">{c.taxNote} <RateNote lang={lang} /></p>
         <div className="mt-auto flex flex-col gap-2">
-          {wa && ok ? (
-            <a href={wa} target="_blank" rel="noopener noreferrer" className="flex h-12 items-center justify-center rounded-full bg-bractea font-medium text-white hover:bg-bractea-dark">{c.builder.send}</a>
-          ) : (
-            <span className="flex h-12 items-center justify-center rounded-full bg-hueso/15 text-sm text-hueso/70">{ok ? c.builder.pending : c.builder.send}</span>
-          )}
+          {links.email && ok && <a href={links.email} className="flex h-12 items-center justify-center rounded-full border border-hueso/40 text-sm font-medium text-hueso">{CONTACT_PROPOSAL[lang].email}</a>}
           <button
             type="button"
             disabled={!ok}
@@ -88,7 +90,7 @@ export default function QuoteBuilder({ lang }: { lang: Lang }) {
           >
             {copied ? c.builder.copied : c.builder.copy}
           </button>
-          <button type="button" onClick={() => setQ(start)} className="text-xs text-hueso/60 underline underline-offset-4">{c.builder.reset}</button>
+          <button type="button" onClick={() => setQ(start)} className="min-h-[46px] rounded-full px-4 text-sm text-hueso/80 underline underline-offset-4">{c.builder.reset}</button>
         </div>
       </div>
     </div>

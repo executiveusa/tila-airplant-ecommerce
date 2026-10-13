@@ -1,4 +1,4 @@
-// Tila wholesale price list - Tillandsia bulbosa only (MXN per plant). PROPOSAL - pending owner approval.
+// Tila wholesale price list - Tillandsia bulbosa only (MXN per plant). Owner delegated pricing in researched range 2026-10-13.
 // Basis: MercadoLibre Mexico retail listings read 2026-09-23 (see PRICING-BASIS.md).
 // Rule: wholesale sits ~50-60% under the per-plant price of retail multi-packs,
 // so a reseller can roughly double it and still land inside the MercadoLibre range.
@@ -23,9 +23,9 @@ export type Size = {
 };
 
 export const SIZES: Size[] = [
-  { key: "chica", cm: "8-12 cm", prices: [42, 36, 30], image: "/images/tila/bulbosa-chica.jpg" },
-  { key: "mediana", cm: "13-18 cm", prices: [60, 52, 45], image: "/images/tila/bulbosa-mediana.jpg" },
-  { key: "grande", cm: "19-25 cm", prices: [85, 74, 64], image: "/images/tila/bulbosa-grande.jpg" },
+  { key: "chica", cm: "8-12 cm", prices: [45, 40, 35], image: "/images/tila/bulbosa-chica.jpg" },
+  { key: "mediana", cm: "13-18 cm", prices: [70, 62, 55], image: "/images/tila/bulbosa-mediana.jpg" },
+  { key: "grande", cm: "19-25 cm", prices: [110, 98, 88], image: "/images/tila/bulbosa-grande.jpg" },
   { key: "especial", cm: "", prices: null, image: "/images/tila/bulbosa-cumulo.jpg" },
 ];
 

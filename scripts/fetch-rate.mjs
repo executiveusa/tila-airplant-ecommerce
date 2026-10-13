@@ -1,8 +1,13 @@
-// Runs before every build: refreshes src/content/rate.json with today's USD->MXN rate.
+// Runs before builds unless the checked-in fallback rate is pinned.
 // Never fails the build: on any error the last known rate stays in place.
 import fs from "fs";
 const file = new URL("../src/content/rate.json", import.meta.url);
 try {
+  const existing = JSON.parse(fs.readFileSync(file, "utf8"));
+if (existing.pinned === true) {
+  console.log(`rate: pinned fallback ${existing.rate} MXN (${existing.date}); no build-time refresh`);
+  process.exit(0);
+}
   const r = await fetch("https://open.er-api.com/v6/latest/USD", { signal: AbortSignal.timeout(8000) });
   const j = await r.json();
   const m = j?.rates?.MXN;

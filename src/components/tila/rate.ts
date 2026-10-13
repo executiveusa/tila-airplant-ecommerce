@@ -51,7 +51,7 @@ export const num = (n: number, lang: Cur) =>
     ? new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", currencyDisplay: "narrowSymbol", minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(n)
     : new Intl.NumberFormat("es-MX", { style: "currency", currency: "MXN", currencyDisplay: "narrowSymbol", maximumFractionDigits: 0 }).format(n);
 export const code = (lang: Cur) => (lang === "en" ? "USD" : "MXN");
-// Plain-text form for messages and strings: "$2.45 USD" / "$42 MXN"
+// Plain-text form for messages and strings: "$2.50 USD" / "$45 MXN"
 export const fmt = (n: number, lang: Cur) => `${num(n, lang)} ${code(lang)}`;
 export const rateDate = (d: string, lang: Cur) =>
   new Date(d + "T12:00:00Z").toLocaleDateString(lang === "en" ? "en-US" : "es-MX", { year: "numeric", month: "short", day: "numeric", timeZone: "UTC" });
