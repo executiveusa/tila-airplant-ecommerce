@@ -1,7 +1,7 @@
 "use client";
 import { useRate, unit, num, code, rateDate, type Cur } from "./rate";
 
-// A price with a visible currency code: "$2.45 USD" on the EN page, "$42 MXN" on the ES page.
+// A price with a visible currency code: "$2.50 USD" on the EN page, "$45 MXN" on the ES page.
 export function Money({ mxn, lang }: { mxn: number; lang: Cur }) {
   const r = useRate();
   return (

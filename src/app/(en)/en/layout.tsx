@@ -1,3 +1,4 @@
+import { LAUNCH_READY } from "@/content/launch";
 import type { Metadata, Viewport } from "next";
 import "@/styles/globals.css";
 import { bricolage, figtree } from "@/styles/fonts";
@@ -5,7 +6,7 @@ import { bricolage, figtree } from "@/styles/fonts";
 export const metadata: Metadata = {
   title: "Tila · Wholesale Tillandsia bulbosa from Puerto Vallarta",
   description: "Wholesale Tillandsia bulbosa air plants from Puerto Vallarta. 50-plant minimum, three sizes plus clusters, per-plant prices.",
-  robots: { index: false, follow: false },
+  robots: { index: LAUNCH_READY, follow: LAUNCH_READY },
 };
 
 export const viewport: Viewport = { themeColor: "#0E1A11" };
