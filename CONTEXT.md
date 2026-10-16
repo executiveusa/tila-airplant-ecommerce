@@ -17,7 +17,7 @@ Owners: Mexico side = Ivette (agent: Alex); USA side = Bambú (agent: Instinct).
 | `docs/shipping/SHIPPING.md` | Researched shipping rules, carriers, packaging, costs, open questions. |
 | `icm/_config/` | Business profile, entity boundaries + ownership (Mexico/USA), automation policy, secrets map (references only). |
 | `icm/characters/TL-001-TILA/` | The standing Tila operator agent: persona, voice, standing orders. |
-| `icm/stages/` | The six work stages (intake, listings, site, orders+shipping, buyer messages, learn). |
+| `icm/stages/` | The eight work stages (intake, listings, site, orders+shipping, buyer messages, learn, wholesale buyers, content marketing). |
 | `icm/memory/` | Append-only business memory: carriers tried, sales, buyer questions, price moves, decisions, lessons. |
 | `icm/strategy/GTM-PLAN.md` | Standing go-to-market plan (organic only, zero spend). |
 | `icm/docs/MEXICO-SIDE-ONBOARDING.es.md` | Onboarding pack for the Mexico side (Ivette / Alex), es-MX, no secrets or infra. |
@@ -35,6 +35,8 @@ Owners: Mexico side = Ivette (agent: Alex); USA side = Bambú (agent: Instinct).
 | Order received, packing, label, tracking | `04_orders-shipping` | Ivette approves new carrier, insurance spend, refunds (Mexico orders) |
 | Buyer question or message | `05_buyer-messages` | Ivette approves outgoing text for Mexican buyers until she grants an auto-reply rule |
 | Weekly review, what sold, what to change | `06_learn` | Proposals only; the owner of each side approves its changes |
+| Wholesale buyer research, pitch, follow-up | `07_wholesale-buyers` | Nothing is sent to any buyer without owner approval of the final message |
+| Social and content drafts, channel plan | `08_content-marketing` | No post without owner approval; no bulbosa advertising until the SEMARNAT/NOM-059 check is resolved |
 
 ## Definition of done
 A stage is done when its output contract is met, evidence is linked (URL, screenshot, commit, receipt), the human gate is visible, and the relevant `icm/memory/` ledger has a new dated entry.
@@ -44,7 +46,7 @@ An agent with zero memory must be able to read `AGENTS.md` -> this file -> one s
 
 ## ES-MX (resumen)
 - **Modelo de capas:** capa 0 `EMERALD_TABLETS.md` y `AGENTS.md`; capa 1 este archivo e `icm/_config/`; capa 2 el `CONTEXT.md` de una sola etapa; capa 3 las bitácoras de `icm/memory/` que indique la etapa; capa 4 los archivos de trabajo en `output/`.
-- **Mapa:** `src/` y `public/` = sitio (español en `/`, inglés en `/en`); `docs/shipping/` = investigación de envíos; `icm/_config/` = perfil del negocio, límites y responsables, política de automatización, mapa de secretos; `icm/characters/TL-001-TILA/` = el agente Tila; `icm/stages/` = seis etapas; `icm/memory/` = memoria del negocio; `icm/strategy/` = plan comercial y perfiles de cliente; `ops/hermes/` = perfil de Hermes y tareas programadas (apagadas); `tools/playwright/` = automatización de navegador.
+- **Mapa:** `src/` y `public/` = sitio (español en `/`, inglés en `/en`); `docs/shipping/` = investigación de envíos; `icm/_config/` = perfil del negocio, límites y responsables, política de automatización, mapa de secretos; `icm/characters/TL-001-TILA/` = el agente Tila; `icm/stages/` = ocho etapas; `icm/memory/` = memoria del negocio; `icm/strategy/` = plan comercial y perfiles de cliente; `ops/hermes/` = perfil de Hermes y tareas programadas (apagadas); `tools/playwright/` = automatización de navegador.
 - **Ruteo y aprobaciones:** publicaciones, precios, envíos, reembolsos y mensajes a compradores en México los aprueba Ivette; DNS, hosting, repositorio y lado EE. UU. los aprueba Bambú; lo compartido, ambos.
 - **Criterio de terminado:** se cumple el entregable de la etapa, hay evidencia (URL, captura, commit, recibo), el control humano está visible y la bitácora correspondiente tiene una entrada con fecha.
 - **Prueba en frío:** un agente sin memoria debe poder leer `AGENTS.md`, este archivo y una etapa, y saber qué sigue. Si no, el cambio no se libera.

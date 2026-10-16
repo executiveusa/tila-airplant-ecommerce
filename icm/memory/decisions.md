@@ -9,3 +9,9 @@
 - 2026-09-23 - Business name is Tila: business = agent = site, one name. (Bambú, WhatsApp 14:31: "now we need to name the business how about Tila")
 - 2026-09-23 - REVERSAL: remove all New World Kids / proceeds / cause logic. Tila is a for-profit business. Supersedes the 13:35 proceeds statement. (Bambú, WhatsApp 14:33: "remove new world kids logic. i need it to be a money businesss")
 - 2026-09-23 - One email for the whole Tila business: jardinesindigo@gmail.com (the MercadoLibre account email) for Zernio, social accounts, site contact, everything. nwkids@mail.instinct.com is New World Kids only. (Bambú, WhatsApp 14:39: "no thats not allowed, use the same one from mercado libre to build the whole business. and the socials . nwkids is only for nwkids")
+
+- 2026-10-16 (Bambú): Puerto Vallarta deprioritized for wholesale buyer discovery - airplants are very common there, margin too thin. Target cities: CDMX, Guadalajara, Monterrey, Queretaro, Oaxaca, Merida, Tulum-Cancun, San Miguel de Allende.
+- 2026-10-16 (Bambú, go 12:21): wholesale buyer development pipeline (stage 07) and content marketing (stage 08) added as ICM stages. All buyer outreach and all posts stay behind owner approval gates.
+- 2026-10-16 (standing from 2026-09-23 scouting verdict, not yet a launch approval): social channel plan - WhatsApp Business app is the base; Instagram + Facebook Page on free Zernio slots; TikTok OFF under the no-paid-ads ruling; skip YouTube/X/Threads/LinkedIn; free routes: Mercado Libre Negocios B2B (needs Tila RFC), Google Business Profile, bodas.com.mx.
+- 2026-10-16 (OPEN): SEMARNAT / NOM-059 advertising rules for tillandsia bulbosa UNVERIFIED. No public advertising for bulbosa until resolved.
+- 2026-10-16 (HOLD, standing): nothing is shared with the Mexico side (Ivette / Alex) until the Tila build is completely finished and Bambú reviews it.
