@@ -7,7 +7,6 @@ export type Lang = "es" | "en";
 type SizeCopy = { name: string; examples: string; use: string };
 
 export type Copy = {
-  draftBanner: string;
   nav: { sizes: string; prices: string; how: string; who: string; faq: string; cta: string; other: string; otherHref: string };
   hero: { eyebrow: string; title: string; sub: string; cta: string; cta2: string; photoAlt: string };
   trust: string[];
@@ -49,7 +48,6 @@ export type Copy = {
 
 export const COPY: Record<Lang, Copy> = {
   es: {
-    draftBanner: "BORRADOR - textos y precios pendientes de aprobación",
     nav: { sizes: "Tallas", prices: "Precios", how: "Cómo funciona", who: "Para quién", faq: "Preguntas", cta: "Arma tu pedido", other: "EN", otherHref: "/en" },
     hero: {
       eyebrow: "Tillandsia bulbosa · Mayoreo · Puerto Vallarta",
@@ -79,7 +77,7 @@ export const COPY: Record<Lang, Copy> = {
     priceSub: "El precio baja según el total de plantas del pedido, sin importar la mezcla de tallas.",
     priceHead: { size: "Talla", tier: (min, max) => (max ? `${min}-${max} plantas` : `${min}+ plantas`) },
     resale: "Precios por debajo del menudeo de Tillandsia bulbosa en MercadoLibre México (septiembre 2026).",
-    taxNote: "Precios en pesos mexicanos (MXN). [IVA, factura y costo de envío: por confirmar].",
+    taxNote: "Precios en pesos mexicanos (MXN). Emitimos factura. El costo de envío se confirma con tu pedido.",
     howTitle: "Cómo funciona",
     how: [
       { t: "Arma tu pedido", d: "Elige cuántas plantas quieres de cada talla. Mínimo 50 en total." },
@@ -127,10 +125,9 @@ export const COPY: Record<Lang, Copy> = {
     faq: [
       { q: "¿Puedo mezclar tallas?", a: "Sí. El mínimo de 50 es por el total del pedido, no por talla." },
       { q: "¿Venden otras especies?", a: "No. Nos especializamos en Tillandsia bulbosa. Al recibir tu solicitud te confirmamos disponibilidad por talla y si hay plantas en flor." },
-      { q: "¿Cuentan con registro de vivero o UMA?", a: "[Registro ante SEMARNAT: por confirmar]." },
-      { q: "¿Hacen envíos a todo México?", a: "[Cobertura, paquetería y tiempos de envío: por confirmar]." },
-      { q: "¿Emiten factura?", a: "[Por confirmar]." },
-      { q: "¿Qué pasa si una planta llega dañada?", a: "[Política de garantía: por confirmar]." },
+      { q: "¿Hacen envíos a todo México?", a: "Sí. Enviamos a todo México y a Estados Unidos. El costo de envío se confirma con tu pedido." },
+      { q: "¿Emiten factura?", a: "Sí. Emitimos factura." },
+      { q: "¿Qué pasa si una planta llega dañada?", a: "Empacamos las plantas con mucho cuidado. Son muy resistentes y casi nunca hay problemas. Si por alguna razón llegan dañadas, mándanos fotos dentro de las 24 horas de recibirlas y te contactamos para hacerte el reembolso." },
     ],
     footer: {
       tagline: "Tillandsia bulbosa al mayoreo desde Puerto Vallarta.",
@@ -141,7 +138,6 @@ export const COPY: Record<Lang, Copy> = {
     },
   },
   en: {
-    draftBanner: "DRAFT - copy and prices pending approval",
     nav: { sizes: "Sizes", prices: "Prices", how: "How it works", who: "Who it's for", faq: "FAQ", cta: "Build your order", other: "ES", otherHref: "/" },
     hero: {
       eyebrow: "Tillandsia bulbosa · Wholesale · Puerto Vallarta",
@@ -171,7 +167,7 @@ export const COPY: Record<Lang, Copy> = {
     priceSub: "The price drops with the total number of plants in your order, however you mix the sizes.",
     priceHead: { size: "Size", tier: (min, max) => (max ? `${min}-${max} plants` : `${min}+ plants`) },
     resale: "Priced below retail Tillandsia bulbosa listings on MercadoLibre Mexico (September 2026).",
-    taxNote: "Prices in US dollars (USD), converted from our peso prices and rounded up. [VAT, invoicing and shipping cost: to be confirmed].",
+    taxNote: "Prices in US dollars (USD), converted from our peso prices and rounded up. We issue invoices; shipping cost is confirmed with your order.",
     howTitle: "How it works",
     how: [
       { t: "Build your order", d: "Pick how many plants you want in each size. 50 minimum in total." },
@@ -219,10 +215,9 @@ export const COPY: Record<Lang, Copy> = {
     faq: [
       { q: "Can I mix sizes?", a: "Yes. The 50 minimum is for the whole order, not per size." },
       { q: "Do you sell other species?", a: "No. We specialize in Tillandsia bulbosa. When we get your request we confirm availability by size and whether plants are in bloom." },
-      { q: "Are you registered as a nursery or UMA?", a: "[SEMARNAT registration: to be confirmed]." },
-      { q: "Do you ship across Mexico?", a: "[Coverage, carrier and delivery times: to be confirmed]." },
-      { q: "Do you issue invoices (factura)?", a: "[To be confirmed]." },
-      { q: "What if a plant arrives damaged?", a: "[Guarantee policy: to be confirmed]." },
+      { q: "Do you ship across Mexico?", a: "Yes. We ship across Mexico and to the United States. Shipping cost is confirmed with your order." },
+      { q: "Do you issue invoices (factura)?", a: "Yes, we issue invoices." },
+      { q: "What if a plant arrives damaged?", a: "We take great care in packing our air plants. They are very durable and we rarely have issues. If for some reason they arrive damaged, send photos within 24 hours of receipt and we will contact you to issue a refund." },
     ],
     footer: {
       tagline: "Wholesale Tillandsia bulbosa from Puerto Vallarta.",

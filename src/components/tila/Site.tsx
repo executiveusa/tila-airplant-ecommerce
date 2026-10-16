@@ -36,7 +36,6 @@ export default function Site({ lang }: { lang: Lang }) {
   return (
     <>
       <RevealObserver />
-      <div className="relative z-50 bg-bractea px-4 py-1.5 text-center text-[11px] font-semibold uppercase tracking-[0.14em] text-white">{c.draftBanner}</div>
 
       <SmartHeader>
         <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:px-8">
